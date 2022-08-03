@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Подключение Muller Regular */
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('../fonts/MullerRegular.woff2') format('woff2'),
+		url('../fonts/MullerRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+
+/* Подключение Muller Bold */
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerBold.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('../fonts/MullerBold.woff2') format('woff2'),
+		url('../fonts/MullerBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+  font-display: swap;
+}
+
+/* Подключение Muller Light Italic */
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerLightItalic.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('../fonts/MullerLightItalic.woff2') format('woff2'),
+		url('../fonts/MullerLightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+  font-display: swap;
+}
+
+/* Подключение Muller Medium */
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerMedium.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('../fonts/MullerMedium.woff2') format('woff2'),
+		url('../fonts/MullerMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+  font-display: swap;
+}
+
+/* Подключение Muller Regular Italic */
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegularItalic.eot');
+	src: local('Muller Thin DEMO'), local('MullerThinDEMO'),
+		url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+		url('../fonts/MullerRegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+  font-display: swap;
+}
+
+
+
+body {
+  font-family: 'Muller', sans-serif;
+	font-weight: 400;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 405px;
+  padding-right: 405px;
+}
+
