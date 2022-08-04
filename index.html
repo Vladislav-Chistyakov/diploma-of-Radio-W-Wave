@@ -100,6 +100,7 @@
               <span class="reset-text header-audio-block__span-info">Ранее в эфире</span>
               <p class="reset-text header-audio-block__name-audio">&laquo;Музыка&raquo;</p>
             </div>
+          </div>
             <div class="header-audio-block__block">
               <button class="btn header-audio-block__btn-start">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,10 +114,10 @@
                 <p class="reset-text header-audio-block__name-audio">&laquo;Как так?&raquo;</p>
               </div>
             </div>
-          </div>
         </div>
         <div class="header-botton__limitations-header limitations-header">
-          <p class="reset-text limitations-header__desc">12+</p>
+          <img class="limitations-header__img" src="./img/header/12+.svg" alt="Возврастное ограничение 12+">
+          <!--<p class="reset-text limitations-header__desc">12+</p>-->
         </div>
       </div>
     </div>
@@ -137,19 +138,31 @@
           <button class="btn hero-section__btn">Слушать эфир</button>
         </div>
         <div class="hero-section__hero-background hero-background">
-          <div class="hero-background__circle"></div>
-          <div class="hero-background__circle"></div>
-          <div class="hero-background__circle"></div>
-          <div class="hero-background__microphone"></div>
+          <div class="circle">
+            <div class="hero-background__microphone"></div>
+            <div class="hero-background__circle circle-1">
+              <svg width="351" height="351" viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="175.005" cy="175.005" r="174.655" fill="white" stroke="#D2D5DD" stroke-width="0.7"/>
+              </svg>
+            </div>
+            <div class="hero-background__circle circle-2">
+              <svg width="296" height="296" viewBox="0 0 296 296" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="148.005" cy="148.005" r="147.167" fill="white" stroke="#D2D5DD" stroke-width="0.7"/>
+              </svg>
+            </div>
+            <div class="hero-background__circle circle-3">
+              <svg width="242" height="242" viewBox="0 0 242 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="121.005" cy="121.005" r="119.68" fill="white" stroke="#D2D5DD" stroke-width="0.7"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section podcasts-section">
       <div class="container podcasts-section__container">
-        <h2 class="podcasts-section__heading heading">
-          Подкасты
-        </h2>
+        <h2 class="podcasts-section__heading heading">Подкасты</h2>
         <ul class="reset-list podcasts-section__podcast-list podcast-list">
           <li class="podcast-list__item item-podcast-one">
             <div class="podcast-list__img-block">
@@ -608,9 +621,7 @@
       <div class="container broadcast-section__container">
         <div class="broadcast-section__left-block-broadcast left-block-broadcast">
           <div class="left-block-broadcast__broadcast-left-top broadcast-left-top">
-            <h2 class="heading broadcast-left-top__heading">
-              Передачи
-            </h2>
+            <h2 class="heading broadcast-left-top__heading">Передачи</h2>
             <span class="reset-text broadcast-left-top__span">Автор:</span>
             <select name="presenter" id="presenter" class="broadcast-left-top__select">
               <option value="Дмитрий Гутенберг">Дмитрий Гутенберг</option>
@@ -622,9 +633,7 @@
           <div class="left-block-broadcast__broadcast-left-botton broadcast-left-botton">
             <img src="./img/broadcast/mic.png" alt="" class="broadcast-left-botton__background">
             <button class="broadcast-left-botton__btn">Архив</button>
-            <span class="reset-text broadcast-left-botton__span">
-              В архив попадают все передачи, которые вы пропустили! Enjoy:)
-            </span>
+            <span class="reset-text broadcast-left-botton__span">В архив попадают все передачи, которые вы пропустили! Enjoy:)</span>
           </div>
         </div>
         <div class="broadcast-section__right-block-broadcast right-block-broadcast">
@@ -685,12 +694,8 @@
 
     <section class="section guests-section">
       <div class="container guests-section__container">
-        <h2 class="guests-section__heding heading">
-          Гости
-        </h2>
-        <span class="reset-text guests-section__span">
-          У&nbsp;нас бывают:
-        </span>
+        <h2 class="guests-section__heding heading">Гости</h2>
+        <span class="reset-text guests-section__span">У&nbsp;нас бывают:</span>
         <p class="reset-text guests-section__text-info">
           Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!
         </p>
@@ -1040,7 +1045,7 @@
               <img src="./img/playlist/ue/Gang-Of-Four-ue-6.jpg" alt="#" class="playlist-block-right__img-group">
               <div class="playlist-block-right__block-botton">
                 <h3 class="playlist-block-right__name-group">Gang Of Four</h3>
-                <p class="reset-text playlist-block-right__text">3 последних альбома</p>
+                <p class="reset-text playlist-block-right__text">3 последних альбома</p>
               </div>
             </li>
           </ul>
@@ -1063,9 +1068,7 @@
             Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
           </p>
           <strong class="adv-section__price-strong">2&nbsp;800&nbsp;₽</strong>
-          <a target="_blank" href="https://market.yandex.ru/" class="reset-text adv-section__link">
-            Купить на&nbsp;Яндекс.Маркет
-          </a>
+          <a target="_blank" href="https://market.yandex.ru/" class="reset-text adv-section__link">Купить на&nbsp;Яндекс.Маркет</a>
         </div>
       </div>
     </section>
