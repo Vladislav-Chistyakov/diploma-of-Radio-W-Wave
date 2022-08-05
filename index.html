@@ -23,14 +23,17 @@
 
 <body>
   <header class="header">
-    <div class="container header__container">
-      <div class="header__left-header left-header">
+    <div class="header__left-header left-header">
+      <div class="container left-header__container">
         <a href="#" class="reset-text left-header__link">
-          <img src="./img/header/logo.svg" alt="Логотип Радио W-Wawe">
+          <img src="./img/header/logo-one-320px.svg" alt="Логотип Радио W-Wawe">
         </a>
+        <button class="btn left-header__btn">Вход</button>
       </div>
+    </div>
+    <div class="container header__container">
       <div class="header__right-header right-header">
-        <a href="#" class="reset-text right-header__link">
+        <a href="#" class="reset-text right-header__link-img">
           <img src="./img/header/logo.svg" alt="Логотип Радио W-Wawe">
         </a>
         <nav class="right-header__nav">
@@ -53,22 +56,41 @@
           </ul>
         </nav>
         <div class="right-header__block-menu">
-          <button class="btn right-header__search-btn">
-            <svg class="right-header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-          <button class="btn right-header__menu-btn">Вход</button>
+          <div class="right-header__block-burger block-burger">
+            <button class="btn block-burger__btn-burger">
+              <span class="block-burger__span-btn"></span>
+              <span class="block-burger__span-btn"></span>
+              <span class="block-burger__span-btn"></span>
+            </button>
+          </div>
+          <div class="right-header__block-btn">
+            <button class="btn right-header__search-btn">
+              <svg class="right-header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="btn right-header__menu-btn">Вход</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="header__header-botton header-botton">
-      <div class="container header__container-botton">
+      <div class="container header-botton__container-botton">
+        <div class="header-botton__btn-ether-block">
+          <button class="btn header-botton__ether-btn">
+            <svg class="btn header-botton__ether-svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
+              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
+              <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
+            </svg>
+          </button>
+          <span class="header-botton__ether-span">Что в эфире?</span>
+        </div>
         <ul class="reset-list header-botton__list">
           <li class="header-botton__item">
             <a href="#" class="reset-text header-botton__link">Новости</a>
@@ -125,7 +147,7 @@
     </div>
   </header>
 
-  <main>
+  <!--<main>
     <section class="section hero-section">
       <div class="container hero-section__container">
         <div class="hero-section__main">
@@ -1234,7 +1256,7 @@
         <p class="reset-text footer__botton-text">W-WAVE <sup class="reset-text reg">&reg;</sup> 2021</p>
       </div>
     </div>
-  </footer>
+  </footer>-->
 
 </body>
 
