@@ -404,6 +404,11 @@ body {
   border: none;
 }
 
+.right-block-broadcast {
+  margin-bottom: var(--margin-block);
+}
+
+
 .right-block-broadcast__list {
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +419,7 @@ body {
   background-size: cover;
   height: 50px;
 }*/
+
 
 .right-block-broadcast__info-block {
   display: flex;
@@ -469,6 +475,47 @@ body {
 
 .right-block-broadcast__link-svg {
   padding-left: 4px;
+}
+
+
+.archive-block {
+  border-top: 1px solid #F2F2F2;
+}
+
+.archive-block__info {
+  background: url("../img/broadcast/mic.png") no-repeat;
+  background-position: 0px 30px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 90px;
+}
+
+.archive-block__span {
+  max-width: 255px;
+  margin-bottom: 7px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #A1A6B4;
+}
+
+.archive-block__btn {
+  padding: 7.5px 19px;
+  border: 2px solid #121723;
+  border-radius: 77px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #121723;
+  background-color: #fff;
+  border: 2px solid #121723;
+}
+
+.archive-block__btn-svg {
+  margin-right: 4px;
 }
 
 /* broadcast-section */
