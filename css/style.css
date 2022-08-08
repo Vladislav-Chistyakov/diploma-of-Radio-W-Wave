@@ -581,6 +581,9 @@ body {
 .guest-item-blogers__list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 13px;
 }
 
 .guest-item-blogers__item {
@@ -653,11 +656,134 @@ body {
   color: #AA9DFA;
 }
 
-
-
-
-
 /* guests-section */
+
+/* playlists-section */
+
+.playlist-block-left__headin {
+  margin-bottom: 20px;
+}
+
+.playlist-block-left__top-block-one {
+  display: none;
+}
+
+.playlist-block-left__span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #A1A6B4;
+}
+
+.playlist-block-left__block-input {
+  display: none;
+}
+
+.playlist-block-left__block-input-btn {
+  display: flex;
+  overflow: auto;
+  margin-bottom: var(--margin-block);
+}
+
+.playlist-block-left__block-btn {
+  padding: 8.5px 21.5px;
+  border: 2px solid #6D31EE;
+  border-radius: 77px;
+  color: #6D31EE;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.playlist-block-left__block-btn:not(:last-child) {
+  margin-right: 15px;
+}
+
+.playlist-block-right__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.playlist-block-right__item {
+  /*width: calc((100%  - var(--margin-block)) / 2);*/
+  width: 113px;
+  position: relative;
+}
+
+.playlist-block-right__item:not(:last-child) {
+  margin-bottom: var(--margin-block);
+}
+
+.playlist-block-right__item:nth-child(11) {
+  margin: 0;
+}
+
+.playlist-block-right__background-img {
+  position: absolute;
+  background-color: #121723;
+  padding: 4px;
+  right: 0;
+}
+
+.playlist-block-right__block-botton {
+  padding: 9px;
+  border: 1px solid #E6E8EC
+}
+
+.playlist-block-right__img-group {
+  display: block;
+}
+
+.playlist-block-right__img {
+  display: block;
+}
+
+.playlist-block-right__name-group {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.playlist-block-right__text {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 9px;
+  color: #A1A6B4;
+}
+
+.playlist-block-right__top-block-info {
+  border-top: 1px solid #D2D5DD;
+  padding-top: 28px;
+}
+
+.playlist-block-right__text-info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A1A6B4;
+}
+
+.playlist-block-right__span-bottom-info {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: #A1A6B4;
+}
+
+/* playlists-section */
+
+
+
+
+
+
+
 
 
 
