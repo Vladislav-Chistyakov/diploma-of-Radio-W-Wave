@@ -520,6 +520,148 @@ body {
 
 /* broadcast-section */
 
+/* guests-section */
+
+.guests-section {
+  background-color: #121723;
+  color: #fff;
+}
+
+.guests-section__heding {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.guests-section__span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #A1A6B4;
+}
+
+.guests-section__text-info {
+  margin-bottom: var(--margin-block);
+  font-size: 14px;
+  line-height: 160%;
+  color: #A1A6B4;
+}
+
+.guest-block-left {
+  margin-bottom: 20px;
+}
+
+.guest-item-blogers__block-specialization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0 10px 0;
+  border-top: 1px solid #A1A6B4;
+}
+
+.guest-item-blogers:last-child .guest-item-blogers__block-specialization {
+  border-bottom: 1px solid #A1A6B4;
+}
+
+.guest-item-blogers__specialization {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.guest-item-blogers__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.guest-item-blogers__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guest-item-blogers__item {
+  width: calc((100% - var(--margin-block) - 12px) / 2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+}
+
+.guest-item-blogers__item:not(:nth-child(2n)) {
+  margin-right: 42px;
+}
+
+.guest-item-blogers__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.guest-block-rigth__img-qu {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.guest-block-rigth__list {
+  display: flex;
+  height: 36px;
+  margin-bottom: 12px;
+}
+
+.guest-block-rigth__link {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.guest-block-rigth__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+}
+
+.guest-block-rigth__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.guest-block-rigth__heading-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.guest-block-rigth__info-person {
+  margin-bottom: var(--margin-block);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #A1A6B4;
+}
+
+.guest-block-rigth__btn {
+  border: 2px solid #AA9DFA;
+  border-radius: 77px;
+  background-color: transparent;
+  padding: 8.5px 13.5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #AA9DFA;
+}
+
+
+
+
+
+/* guests-section */
+
+
+
+
 
 
 
@@ -529,4 +671,5 @@ body {
 
   }
 /* media */
+
 
