@@ -660,7 +660,7 @@ body {
 
 /* playlists-section */
 
-.playlist-block-left__headin {
+.playlist-block-left__heading {
   margin-bottom: 20px;
 }
 
@@ -777,6 +777,78 @@ body {
 }
 
 /* playlists-section */
+
+/* adv-section */
+
+.adv-section {
+  background-color: #292E39;
+  color: #fff;
+}
+
+.adv-section__background-block {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.adv-section__background {
+  width: 100%;
+}
+
+.adv-section__background-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.adv-section__heading {
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #F0D288;
+}
+
+.adv-section__background-main {
+  margin-bottom: 18px;
+  width: 100%;
+  height: 12px;
+  background: url("../img/adv/Vector3.svg");
+}
+
+.adv-section__text {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.adv-section__price-strong {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.adv-section__link {
+  display: flex;
+  align-items: center;
+  padding: 14px 15px;
+  border: 2px solid #F0D288;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #F0D288;
+}
+
+.adv-section__pric-svg {
+  margin-right: 8px;
+}
+
+/* adv-section */
+
 
 
 
