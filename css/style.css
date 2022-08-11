@@ -291,6 +291,12 @@ body {
     height: 72px;
   }
 
+  .podcast-list__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   .podcast-list__date {
     position: absolute;
     top: -1px;
@@ -414,19 +420,25 @@ body {
   flex-wrap: wrap;
 }
 
-/*.right-block-broadcast__bacground {
-  background: url("../img/broadcast/broadcast-1.jpg") no-repeat;
-  background-size: cover;
+.right-block-broadcast__bacground {
+  /*background: url("../img/broadcast/broadcast-1.jpg") no-repeat;*/
+  /*background-size: cover;*/
   height: 50px;
-}*/
+}
+
+.right-block-broadcast__bacground-img {
+  width: 100%;
+  height: 100%;
+}
 
 
 .right-block-broadcast__info-block {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   padding: 9px;
-  justify-content: space-between;
+  border: 1px solid #E6E8EC;
 }
 
 
@@ -435,7 +447,6 @@ body {
   flex-direction: column;
   width: calc((100% - var(--margin-block)) / 2);
   margin-bottom: 30px;
-  border: 1px solid #E6E8EC;
 }
 
 .right-block-broadcast__item:not(:nth-child(2n)) {
@@ -601,9 +612,16 @@ body {
   margin-bottom: 30px;
 }
 
-.guest-block-rigth__img-qu {
+.guest-block-rigth__img-picture {
   display: block;
   margin-bottom: 12px;
+  height: 100%;
+}
+
+.guest-block-rigth__img-qu {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .guest-block-rigth__list {
@@ -683,7 +701,8 @@ body {
 .playlist-block-left__block-input-btn {
   display: flex;
   overflow: auto;
-  margin-bottom: var(--margin-block);
+  padding-bottom: 15px;
+  margin-bottom: calc(var(--margin-block) / 2);
 }
 
 .playlist-block-left__block-btn {
@@ -736,6 +755,7 @@ body {
 
 .playlist-block-right__img-group {
   display: block;
+  width: 100%;
 }
 
 .playlist-block-right__img {
@@ -883,7 +903,7 @@ body {
 .about-section__list {
   display: flex;
   overflow: scroll;
-  margin-bottom: var(--margin-block);
+  padding-bottom: var(--margin-block);
 }
 
 .about-section__pucture {
@@ -1027,12 +1047,16 @@ body {
 
 .footer__center-nav-mobile {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__center-list {
   display: flex;
   flex-direction: column;
+}
+
+.footer__center-list:first-child {
+  margin-right: 78px;
 }
 
 .footer__center-list:nth-child(2) {
