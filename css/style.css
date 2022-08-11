@@ -981,6 +981,98 @@ body {
   color: #FFFFFF;
 }
 
+/* Footer */
+
+.footer__top-container {
+  background-color: #292E39;
+}
+
+.footer__left-block-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__left-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__left-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.footer__left-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__left-link-soc {
+  display: flex;
+  align-items: center;
+}
+
+.footer__center-container {
+  background-color: #121723;
+  padding-top: var(--margin-block);
+  padding-bottom: var(--margin-block);
+}
+
+.footer__center-nav-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__center-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__center-list:nth-child(2) {
+  width: 113px;
+}
+
+.footer__center-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer__center-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.footer__botton-background {
+  background-color: #292E39;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.footer__botton-vector {
+  background: url("../img/footer/Vector.svg");
+  height: 12px;
+  margin-bottom: 9px;
+}
+
+.footer__botton-text, .footer__botton-text sup {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 103.34%;
+  color: #A1A6B4;
+}
+
+/* Footer */
+
+
 
 
 
