@@ -849,7 +849,144 @@ body {
 
 /* adv-section */
 
+/* about-section */
 
+.about-section {
+  background-color: #121723;
+}
+
+.about-block-left__heading {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.about-block-left__bolt {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #A1A6B4;
+}
+
+.about-block-left__text {
+  margin-bottom: var(--margin-block);
+  font-size: 14px;
+  line-height: 160%;
+  color: #A1A6B4;
+}
+
+.about-block-right, .about-section__svg-left, .about-section__svg-right {
+  display: none;
+}
+
+.about-section__list {
+  display: flex;
+  overflow: scroll;
+  margin-bottom: var(--margin-block);
+}
+
+.about-section__pucture {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.about-section__img {
+  display: block;
+  width: 113px;
+  height: 113px;
+}
+
+.about-section__item {
+  width: 113px;
+}
+
+.about-section__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about-section__heading-name-person {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.about-section__text-person {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A1A6B4;
+}
+
+.about-form-block {
+  width: 100%;
+}
+
+.about-form-block__texteria {
+  height: 150px;
+  margin-bottom: var(--margin-block);
+  border-radius: 20px;
+}
+
+.about-form-block__input-name, .about-form-block__input-email {
+  border-radius: 40px;
+  margin-bottom: var(--margin-block);
+}
+
+.about-form-block__texteria, .about-form-block__input-name, .about-form-block__input-email {
+  display: block;
+  width: 100%;
+  padding: 16px 23px;
+  border: 1px solid #FFFFFF;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.about-form-block__texteria::placeholder, .about-form-block__input-name::placeholder, .about-form-block__input-email::placeholder  {
+  color: #A1A6B4;
+}
+
+.about-form-block__btn {
+  display: block;
+  margin-bottom: 20px;
+  padding: 17px 44.5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #6D31EE;
+  border-radius: 40px;
+}
+
+.about-form-block__checkbox{
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.about-form-block__checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.about-form-block__text-checkbox {
+  position: relative;
+  top: 1px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+/* about-section */
 
 
 
