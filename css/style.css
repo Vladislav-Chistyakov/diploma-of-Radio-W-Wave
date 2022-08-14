@@ -114,6 +114,10 @@ body {
   padding: 54px 0;
 }
 
+.btn:focus, .reset-text:focus {
+  outline: none;
+}
+
 /* header */
 
 .header {
@@ -143,6 +147,24 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #121723;
   border-radius: 77px;
+  transition: color .3s ease,
+  background-color .3s ease,
+  border-color .3s ease;
+}
+
+.left-header__btn:focus {
+  background-color: #AA9DFA;
+}
+
+.left-header__btn:hover {
+  background-color: #121723;
+  color: #fff;
+}
+
+.left-header__btn:active {
+  background-color: #4F28A5;
+  color: #fff;
+  border-color: #4F28A5;
 }
 
 /* header-top */
@@ -255,6 +277,23 @@ body {
   max-height: 24px;
 }
 
+.right-header__search-btn path {
+  stroke:#6D31EE;
+  transition: stroke .3s ease;
+}
+
+.right-header__search-btn:focus path{
+  stroke: #AA9DFA;
+}
+
+.right-header__search-btn:hover path {
+  stroke: #AA9DFA;
+}
+
+.right-header__search-btn:active path {
+  stroke: #4F28A5;
+}
+
 /* header-center */
 
 /* header-bottom */
@@ -324,6 +363,21 @@ body {
   color: #FFFFFF;
   background-color: #6D31EE;
   border-radius: 40px;
+  transition: outline .3s ease, background-color .3s ease;
+}
+
+.hero-section__btn:focus {
+  background-color: #AA9DFA;
+  outline: 2px solid #4F28A5;
+}
+
+.hero-section__btn:hover {
+  background-color: #AA9DFA;
+}
+
+.hero-section__btn:active {
+  background-color: #4F28A5;
+  outline: none;
 }
 
 .hero-section__hero-background {
@@ -368,9 +422,6 @@ body {
   line-height: 10px;
 }
 
-.podcast-list__date:nth-child(3){
-}
-
 .podcast-info-block {
   background-color: #fff;
 }
@@ -406,11 +457,54 @@ body {
   align-items: center;
 }
 
+.podcast-info-block__top-button circle {
+  stroke: #A1A6B4;
+  fill: #fff;
+  transition: stroke .3s ease, fill .3s ease;
+}
+
+.podcast-info-block__top-button path {
+  fill: #A1A6B4;
+  transition: fill .3s ease;
+}
+
+.podcast-info-block__top-button:focus circle {
+  stroke: #AA9DFA;
+}
+
+.podcast-info-block__top-button:focus path {
+  fill: #AA9DFA;
+}
+
+.podcast-info-block__top-button:hover circle {
+  stroke: #6D31EE;
+}
+
+.podcast-info-block__top-button:hover path {
+  fill: #6D31EE;
+}
+
+.podcast-info-block__top-button:active circle {
+  stroke: #4F28A5;
+  fill: #4F28A5;
+}
+
+.podcast-info-block__top-button:active path {
+  fill: #fff;
+}
+
 .podcast-info-block__bottom-podcast {
   display: flex;
   padding: 5px 10px 6px 34px;
   border-top: 1px solid #F2F2F2;
+}
 
+.podcast-info-block__actions-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  outline: 0px solid #fff;
+  transition: background-color .3s ease, outline .3s ease;
 }
 
 .podcast-info-botton-span {
@@ -418,18 +512,50 @@ body {
   font-size: 12px;
   line-height: 12px;
   color: #A1A6B4;
+  transition: color .3s ease;
 }
 
-.podcast-info-block__actions {
-  display: flex;
-  align-items: center;
+.podcast-info-block__actions-btn .podcast-info-block__actions-btn-svg path {
+  fill: #A1A6B4;
+  transition: fill .3s ease;
 }
 
-.podcast-info-block__actions:not(:last-child) {
-  margin-right: 30px;
+.podcast-info-block__actions-btn:focus {
+  background-color: #AA9DFA;
+  outline: 2px solid #AA9DFA;
 }
 
-.play-block button, .like-block button, .shared-block button {
+.podcast-info-block__actions-btn:focus path, .podcast-info-block__actions-btn:focus .podcast-info-botton-span {
+  fill: #fff;
+  color: #fff;
+  opacity: 1;
+}
+
+.podcast-info-block__actions-btn:hover {
+  background-color: #fff;
+  outline: 0px solid #fff;
+}
+
+.podcast-info-block__actions-btn:hover path, .podcast-info-block__actions-btn:hover .podcast-info-botton-span {
+  fill: #6D31EE;;
+  color: #6D31EE;
+}
+
+.podcast-info-block__actions-btn:active {
+  background-color: #fff;
+  outline: 0px solid #fff;
+}
+
+.podcast-info-block__actions-btn:active path, .podcast-info-block__actions-btn:active .podcast-info-botton-span {
+  color: #4F28A5;
+  fill:#4F28A5;
+}
+
+.podcast-info-block__actions-btn:not(:last-child) {
+  margin-right: var(--margin-block);
+}
+
+.podcast-info-block__actions-btn-svg {
   margin-right: 6px;
   height: 13px;
 }
@@ -444,6 +570,23 @@ body {
   color: #6D31EE;
   border: 2px solid #6D31EE;
   border-radius: 40px;
+  transition: border .3s ease, color .3s ease, background-color .3s ease;
+}
+
+.podcasts-section__btn:focus {
+  background-color: #AA9DFA;;
+  color: #fff;
+}
+
+.podcasts-section__btn:hover {
+  background-color: #6D31EE;
+  color: #fff;
+}
+
+.podcasts-section__btn:active {
+  border: 2px solid #4F28A5;
+  background-color: #4F28A5;
+  color: #fff;
 }
 
 .item-podcast-five, .item-podcast-six, .item-podcast-seven, .item-podcast-eight {
@@ -548,12 +691,59 @@ body {
 }
 
 .right-block-broadcast__link {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 12px;
-  color: #6D31EE;
+  color: #121723;
+  background-color: transparent;
+  transition: color .3s ease;
+  z-index: 2;
 }
+
+.right-block-broadcast__link::after {
+  content: "";
+  position: absolute;
+  background-color: #AA9DFA;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.right-block-broadcast__link path {
+  fill: #121723;
+  transition: fill .3s ease;
+}
+
+.right-block-broadcast__link:focus, .right-block-broadcast__link:focus:after, .right-block-broadcast__link:focus path {
+  color: #fff;
+  fill: #fff;
+  opacity: 1;
+}
+
+.right-block-broadcast__link:hover:after {
+  opacity: 0;
+}
+
+.right-block-broadcast__link:hover, .right-block-broadcast__link:hover path  {
+  color: #6D31EE;
+  fill: #6D31EE;
+}
+
+.right-block-broadcast__link:active:after {
+  opacity: 0;
+}
+
+.right-block-broadcast__link:active, .right-block-broadcast__link:active path {
+  color: #4F28A5;
+  fill: #4F28A5;
+}
+
 
 .right-block-broadcast__link-svg {
   padding-left: 4px;
@@ -594,6 +784,29 @@ body {
   color: #121723;
   background-color: #fff;
   border: 2px solid #121723;
+  transition: border .3s ease, color .3s ease, background-color .3s ease;
+}
+
+.archive-block__btn path {
+  stroke: #121723;
+  transition: stroke .3s ease;
+}
+
+.archive-block__btn:focus {
+  background-color: #AA9DFA;
+}
+
+.archive-block__btn:hover, .archive-block__btn:hover path{
+  background-color: #121723;
+  stroke: #fff;
+  color: #fff;
+}
+
+.archive-block__btn:active, .archive-block__btn:active  .archive-block__btn path{
+  background-color: #4F28A5;
+  stroke: #fff;
+  color: #fff;
+  border: 2px solid #4F28A5;
 }
 
 .archive-block__btn-svg {
