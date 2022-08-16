@@ -125,7 +125,6 @@ body {
 }
 
 
-
 /* header */
 
 .header {
@@ -164,15 +163,9 @@ body {
   background-color: #AA9DFA;
 }
 
-.left-header__btn:hover {
+.left-header__btn:active {
   background-color: #121723;
   color: #fff;
-}
-
-.left-header__btn:active {
-  background-color: #4F28A5;
-  color: #fff;
-  border-color: #4F28A5;
 }
 
 /* header-top */
@@ -294,12 +287,8 @@ body {
   stroke: #AA9DFA;
 }
 
-.right-header__search-btn:hover path {
-  stroke: #AA9DFA;
-}
-
 .right-header__search-btn:active path {
-  stroke: #4F28A5;
+  stroke: #AA9DFA;
 }
 
 /* header-center */
@@ -332,7 +321,6 @@ body {
   line-height: 16px;
   color: #6D31EE;
 }
-
 
 /* header-bottom */
 
@@ -379,13 +367,8 @@ body {
   outline: 2px solid #4F28A5;
 }
 
-.hero-section__btn:hover {
-  background-color: #AA9DFA;
-}
-
 .hero-section__btn:active {
-  background-color: #4F28A5;
-  outline: none;
+  background-color: #AA9DFA;
 }
 
 .hero-section__hero-background {
@@ -484,21 +467,12 @@ body {
   fill: #AA9DFA;
 }
 
-.podcast-info-block__top-button:hover circle {
+.podcast-info-block__top-button:active circle {
   stroke: #6D31EE;
 }
 
-.podcast-info-block__top-button:hover path {
-  fill: #6D31EE;
-}
-
-.podcast-info-block__top-button:active circle {
-  stroke: #4F28A5;
-  fill: #4F28A5;
-}
-
 .podcast-info-block__top-button:active path {
-  fill: #fff;
+  fill: #6D31EE;
 }
 
 .podcast-info-block__bottom-podcast {
@@ -539,24 +513,14 @@ body {
   opacity: 1;
 }
 
-.podcast-info-block__actions-btn:hover {
-  background-color: #fff;
-  outline: 0px solid #fff;
-}
-
-.podcast-info-block__actions-btn:hover path, .podcast-info-block__actions-btn:hover .podcast-info-botton-span {
-  fill: #6D31EE;;
-  color: #6D31EE;
-}
-
 .podcast-info-block__actions-btn:active {
   background-color: #fff;
   outline: 0px solid #fff;
 }
 
 .podcast-info-block__actions-btn:active path, .podcast-info-block__actions-btn:active .podcast-info-botton-span {
-  color: #4F28A5;
-  fill:#4F28A5;
+  fill: #6D31EE;;
+  color: #6D31EE;
 }
 
 .podcast-info-block__actions-btn:not(:last-child) {
@@ -586,14 +550,8 @@ body {
   color: #fff;
 }
 
-.podcasts-section__btn:hover {
-  background-color: #6D31EE;
-  color: #fff;
-}
-
 .podcasts-section__btn:active {
-  border: 2px solid #4F28A5;
-  background-color: #4F28A5;
+  background-color: #6D31EE;
   color: #fff;
 }
 
@@ -641,8 +599,6 @@ body {
 }
 
 .right-block-broadcast__bacground {
-  /*background: url("../img/broadcast/broadcast-1.jpg") no-repeat;*/
-  /*background-size: cover;*/
   height: 50px;
 }
 
@@ -650,7 +606,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 
 .right-block-broadcast__info-block {
   display: flex;
@@ -661,7 +616,6 @@ body {
   padding-bottom: 10px;
   border: 1px solid #E6E8EC;
 }
-
 
 .right-block-broadcast__item {
   display: flex;
@@ -682,7 +636,6 @@ body {
 .right-block-broadcast__item:nth-child(5) {
   margin-bottom: 0;
 }
-
 
 .right-block-broadcast__heading {
   margin-bottom: 5px;
@@ -734,29 +687,18 @@ body {
   opacity: 1;
 }
 
-.right-block-broadcast__link:hover:after {
-  opacity: 0;
-}
-
-.right-block-broadcast__link:hover, .right-block-broadcast__link:hover path  {
-  color: #6D31EE;
-  fill: #6D31EE;
-}
-
 .right-block-broadcast__link:active:after {
   opacity: 0;
 }
 
-.right-block-broadcast__link:active, .right-block-broadcast__link:active path {
-  color: #4F28A5;
-  fill: #4F28A5;
+.right-block-broadcast__link:active, .right-block-broadcast__link:active path  {
+  color: #6D31EE;
+  fill: #6D31EE;
 }
-
 
 .right-block-broadcast__link-svg {
   padding-left: 4px;
 }
-
 
 .archive-block {
   border-top: 1px solid #F2F2F2;
@@ -782,7 +724,6 @@ body {
 
 .archive-block__btn {
   padding: 7.5px 19px;
-  border: 2px solid #121723;
   border-radius: 77px;
   font-weight: 500;
   font-size: 16px;
@@ -804,17 +745,10 @@ body {
   background-color: #AA9DFA;
 }
 
-.archive-block__btn:hover, .archive-block__btn:hover path{
+.archive-block__btn:active, .archive-block__btn:active path{
   background-color: #121723;
   stroke: #fff;
   color: #fff;
-}
-
-.archive-block__btn:active, .archive-block__btn:active  .archive-block__btn path{
-  background-color: #4F28A5;
-  stroke: #fff;
-  color: #fff;
-  border: 2px solid #4F28A5;
 }
 
 .archive-block__btn-svg {
@@ -1154,7 +1088,6 @@ body {
   color: #121723;
 }
 
-
 .playlist-block-right__item-link:active .playlist-block-right__background-btn::after,
 .playlist-block-right__item-link:active .playlist-block-right__background-btn {
   opacity: 1;
@@ -1196,7 +1129,6 @@ body {
   opacity: 0;
   transition: opacity .3s ease;
 }
-
 
 .playlist-block-right__img-group {
   position: relative;
@@ -1590,8 +1522,6 @@ body {
 .footer__left-link-soc:active path{
   fill: #6D31EE;
 }
-
-
 
 .footer__center-container {
   background-color: #121723;
