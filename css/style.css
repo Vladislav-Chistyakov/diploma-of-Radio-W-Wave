@@ -145,7 +145,7 @@ body {
   align-items: center;
 }
 
-.left-header__btn {
+.header-login-button {
   padding: 7.5px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -159,11 +159,11 @@ body {
   border-color .3s ease;
 }
 
-.left-header__btn:focus {
+.header-login-button:focus {
   background-color: #AA9DFA;
 }
 
-.left-header__btn:active {
+.header-login-button:active {
   background-color: #121723;
   color: #fff;
 }
@@ -276,6 +276,10 @@ body {
 
 .right-header__block-btn {
   max-height: 24px;
+}
+
+.right-header__search-btn {
+  height: 24px;
 }
 
 .right-header__search-btn path {
@@ -396,10 +400,29 @@ body {
   height: 72px;
 }
 
-.podcast-list__img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.item-podcast-one .podcast-list__img-block {
+  background: url("../img/podcasts/podcast-1.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.item-podcast-two .podcast-list__img-block {
+  background: url("../img/podcasts/podcast-2.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+.item-podcast-three .podcast-list__img-block {
+  background: url("../img/podcasts/podcast-3.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+
+.item-podcast-four .podcast-list__img-block {
+  background: url("../img/podcasts/podcast-4.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
 .podcast-list__date {
@@ -1613,28 +1636,69 @@ body {
 /* Footer */
 
 
+/* media 576px*/
+  @media(min-width: 576px) {
+
+    /* header */
 
 
+    .left-header__btn {
+      display: none;
+    }
+
+    .header__left-header {
+      padding: 23px 0;
+    }
+
+    .right-header__block-menu {
+      padding: 20px 0;
+      align-items: center;
+    }
+
+    .right-header__block-btn {
+      display: flex;
+      align-items: center;
+      max-height: 100%;
+    }
+
+    .right-header__search-btn {
+      margin-right: 24px;
+    }
+
+    .right-header__menu-btn {
+      display: block;
+    }
+
+    /* header */
+
+    /* podcasts-section */
+
+    .podcast-list__item {
+      display: flex;
+      height: 100%;
+    }
+
+    .podcast-list__img-block {
+      width: 112px;
+    }
+
+    .item-podcast-one .podcast-list__img-block {
+      background: url("../img/podcasts/podcast-1-576px.jpg") no-repeat;
+      background-size: 100% 100%;
+      height: 140px;
+    }
+
+    .podcast-list__date {
+      bottom: -1px;
+    }
+
+    .podcast-info-block {
+      width: 100%;
+    }
+
+    /* podcasts-section */
 
 
-
-/* about-section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media 768px*/
-  @media(min-width: 768px) {
 
   }
 /* media */
