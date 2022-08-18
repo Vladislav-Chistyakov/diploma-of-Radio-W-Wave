@@ -982,7 +982,9 @@ body {
   border: 2px solid #4F28A5;
 }
 
-
+.guest-item-blogers__block-lists {
+  display: none;
+}
 
 /* guests-section */
 
@@ -1842,7 +1844,8 @@ body {
   @media(min-width: 768px) {
 
     .container {
-      padding: 0 114px;
+      padding-left: 114px;
+      padding-right: 114px;
     }
 
     /* header */
@@ -1887,6 +1890,33 @@ body {
     }
 
     /* header */
+
+    /* guest */
+
+    .list-guest-one {
+      display: none;
+    }
+
+    .guest-item-blogers__block-lists {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .guest-item-blogers__item:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+
+    .list-guest-two {
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    .guest-item-blogers__item {
+      width: auto;
+    }
+
+    /* guest */
+
 
   }
 
