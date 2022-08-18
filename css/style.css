@@ -326,6 +326,10 @@ body {
   color: #6D31EE;
 }
 
+.header-botton__btn-start {
+  display: none;
+}
+
 /* header-bottom */
 
 /* heading */
@@ -1662,9 +1666,13 @@ body {
     }
 
     .podcast-list__img-block {
-      width: 112px;
-      min-height: 72px;
+      max-width: 112px;
       height: auto;
+    }
+
+    .podcast-list__img {
+      display: block;
+      width: 100%;
     }
 
     .podcast-list__date {
@@ -1780,8 +1788,108 @@ body {
 
     /* broadcast */
 
+    /* playlist */
+
+    .playlist-block-right__list {
+      justify-content: flex-start;
+    }
+
+    .playlist-block-left__block-input-btn {
+      display: none;
+    }
+
+    .playlist-block-left__block-input {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    .playlist-block-right__item {
+      width: calc((100% - var(--margin-block)) / 2);
+    }
+
+    .playlist-block-right__item:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    .playlist-block-right__item-link {
+      display: flex;
+      width: auto;
+    }
+
+    .playlist-block-right__background-img {
+      right: auto;
+      left: 0;
+    }
+
+    .playlist-block-right__block-botton {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .playlist-block-right__img-group {
+      width: 112px;
+    }
+
+    .playlist-block-right__background-btn::after {
+      bottom: -37.5px;
+    }
+
+    /* playlist */
+  }
+
+  @media(min-width: 768px) {
+
+    .container {
+      padding: 0 114px;
+    }
+
+    /* header */
+
+    .header-botton {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+
+    .header-botton__container-botton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-botton__btn-ether-block {
+      display: none;
+    }
+
+    .header-botton__list {
+      display: flex;
+      margin-right: 21px;
+    }
+
+    .header-botton__item:not(:last-child) {
+      margin-right: 28px;
+      font-weight: 400;
+    }
+
+    .header-botton__link {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .header-botton__btn-start {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-botton__btn-start path{
+      fill: #A1A6B4;
+    }
+
+    /* header */
 
   }
+
 /* media */
 
 
