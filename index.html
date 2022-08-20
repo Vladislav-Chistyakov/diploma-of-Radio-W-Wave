@@ -1201,16 +1201,64 @@
           <div class="playlist-block-left__top-block">
             <h2 class="playlist-block-left__heading heading">Плейлисты</h2>
             <span class="reset-text playlist-block-left__span">Жанр</span>
-            <div class="playlist-block-left__block-input">
-              <input checked type="radio" name="genre" value="Постпанк">Постпанк
-              <input type="radio" name="genre" value="Хардкор">Хардкор
-              <input type="radio" name="genre" value="Панк-рок">Панк-рок
-              <input type="radio" name="genre" value="Рок">Рок
-              <input type="radio" name="genre" value="Прогрессивный рок">Прогрессивный рок
-              <input type="radio" name="genre" value="Электронная музыка">Электронная музыка
-              <input type="radio" name="genre" value="Классическая музыка">Классическая музыка
-              <input type="radio" name="genre" value="Звуки природы и шум города">Звуки природы и шум города
-            </div>
+            <ul class="reset-list playlist-block-left__list-input">
+              <li class="playlist-block-left__list-item">
+                <label for="postpunk" class="playlist-block-left__label">
+                  <input id="postpunk" class="playlist-block-left__radio" checked type="radio" name="genre" value="Постпанк">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Постпанк</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="progressive-rock" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="progressive-rock" name="genre" value="Прогрессивный рок">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Прогрессивный рок</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="hardcore" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="hardcore" name="genre" value="Хардкор">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Хардкор</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="electronic-music" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="electronic-music" name="genre" value="Электронная музыка">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Электронная музыка</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="punk-rock" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="punk-rock" name="genre" value="Панк-рок">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Панк-рок</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="classical-music" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="classical-music" name="genre" value="Классическая музыка">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Классическая музыка</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="rock" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="rock" name="genre" value="Рок">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Рок</p>
+                </label>
+              </li>
+              <li class="playlist-block-left__list-item">
+                <label for="natural-sounds" class="playlist-block-left__label">
+                  <input type="radio" class="playlist-block-left__radio" id="natural-sounds" name="genre" value="Звуки природы и шум города">
+                  <span class="playlist-block-left__span-radio"></span>
+                  <p class="reset-text playlist-block-left__radio-text">Звуки природы и шум города</p>
+                </label>
+              </li>
+            </ul>
             <div class="playlist-block-left__block-input-btn">
               <button class="playlist-block-left__block-btn btn">Постпанк</button>
               <button class="playlist-block-left__block-btn btn">Хардкор</button>
@@ -1591,6 +1639,13 @@
           <button type="submit" class="about-form-block__btn btn">Отправить</button>
           <label for="text-checkbox" class="about-form-block__checkbox-label">
             <input id="text-checkbox" type="checkbox" class="about-form-block__checkbox">
+            <span class="about-form-block__checkbox-box">
+              <span class="about-form-block__checkbox-box-svg">
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.77862 0.828427L3.82888 5.77817L1.00045 2.94975" stroke="#AA9DFA" stroke-width="2"/>
+                </svg>
+              </span>
+            </span>
             <p class="reset-text about-form-block__text-checkbox">Согласен на&nbsp;обработку персональных данных</p>
           </label>
         </form>
