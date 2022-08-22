@@ -2614,7 +2614,7 @@ body {
     position: absolute;
     top: -8px;
     left: -4px;
-    background-color: #A1A6B4;
+    background-color: #D2D5DD;
     width: 1px;
     height: 40px;
   }
@@ -2628,14 +2628,10 @@ body {
     position: absolute;
     top: -8px;
     right: 3px;
-    background-color: #A1A6B4;
+    background-color: #D2D5DD;
     width: 1px;
     height: 40px;
   }
-
-
-
-
 
   .header-audio-block__block:not(:last-child) {
     margin-right: 10px;
@@ -3057,6 +3053,54 @@ body {
 
 }
 
+@media(min-width: 1366px) {
+
+  .header-audio-block__block {
+    padding: 2px 10px 3px;
+    border-right: 1px solid #D2D5DD;
+    border-left: 1px solid #D2D5DD;
+  }
+
+  .header-audio-block__block:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header-audio-block__block:last-child {
+    border-left: none;
+    margin-right: 52px;
+  }
+
+  .header-audio-block__block::after,
+  .header-audio-block__block::before {
+    display: none;
+  }
+
+  .limitations-header {
+    position: relative;
+    display: block;
+    background-color: #E6E8EC;
+    padding: 14px 8px;
+  }
+
+  .limitations-header__desc {
+    padding: 7px 4.5px;
+    /*font-family: 'Open Sans';*/
+    background-color: #fff;
+    border-radius: 100px;
+    line-height: 16px;
+    color: #A1A6B4;
+  }
+
+  .header-botton {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-audio-block__block:last-child .header-audio-block__name-audio {
+    left: 0;
+  }
+
+}
 /* media */
 
 
