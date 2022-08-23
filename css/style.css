@@ -3368,6 +3368,110 @@ body {
     padding-right: 405px;
   }
 
+  /* header */
+
+  .right-header__link-img {
+    position: relative;
+    top: 3px;
+  }
+
+  .right-header__nav {
+    margin-right: 80px;
+  }
+
+  .header-botton__list {
+    margin-right: 44px;
+  }
+
+  .header-audio-block {
+    justify-content: flex-start;
+  }
+
+  .header-botton__list {
+    justify-content: flex-start;
+  }
+
+  .header-botton__item:not(:last-child) {
+    margin-right: 52.5px;
+  }
+
+  .header-botton__list {
+    margin-right: 52px;
+  }
+
+  .header-audio-block {
+    width: 100%;
+  }
+
+  .header-audio-block__block {
+    width: 50%;
+  }
+
+  .header-audio-block__block {
+    padding-right: ;
+  }
+
+  .header-audio-block__block:last-child {
+    margin-right: 52px;
+  }
+
+  .limitations-header__desc {
+    font-size: 12px;
+    padding: 8px 5.5px 6px;
+  }
+
+  .hero-section {
+    padding-top: 36px;
+    padding-bottom: 34px;
+  }
+
+  .hero-background {
+    top: -5px;
+    left: -8px;
+  }
+
+  .hero-background__microphone {
+    top: 88px;
+    left: 73px;
+  }
+
+  .hero-section__main {
+    max-width: 635px;
+  }
+
+  .hero-section__text {
+    margin-bottom: 45px;
+  }
+
+  /* header */
+
+  /* podcast */
+
+  .podcast-list {
+    margin-bottom: var(--margin-block);
+  }
+
+  /* broadcast-section */
+
+  .broadcast-section {
+    padding-bottom: 93px;
+  }
+
+  /* broadcast-section */
+
+
+
+
+  /* podcast */
+
+  .guests-section__text-info {
+    max-width: 825px;
+  }
+
+  .guests-section {
+    padding-bottom: 94px;
+  }
+
   .guests-section__block {
     justify-content: flex-start;
   }
@@ -3378,6 +3482,7 @@ body {
 
   .guest-block-rigth {
     max-width: 350px;
+    width: 100%;
   }
 
 }
