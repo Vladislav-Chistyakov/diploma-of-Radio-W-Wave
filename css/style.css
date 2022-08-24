@@ -549,7 +549,7 @@ body {
 .podcasts-section__btn {
   display: block;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 15px 28px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -723,10 +723,10 @@ body {
 }
 
 .archive-block__info {
-  background: url("../img/broadcast/mic.png") no-repeat;
+  background: url("../img/broadcast/mic-320px.png") no-repeat;
   background-position: 0px 30px;
   padding-top: 29px;
-  padding-bottom: 26px;
+  padding-bottom: var(--margin-block);
   padding-left: 90px;
 }
 
@@ -741,7 +741,7 @@ body {
 }
 
 .archive-block__btn {
-  padding: 7.5px 19px;
+  padding: 5.5px 18px;
   border-radius: 77px;
   font-weight: 500;
   font-size: 16px;
@@ -804,18 +804,22 @@ body {
 }
 
 .guest-block-left {
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .guest-item-blogers:first-child .guest-item-blogers__block-specialization {
   border-bottom: 1px solid #A1A6B4;
 }
 
+.guest-item-blogers__block-list-decstop {
+  display: none;
+}
+
 .guest-item-blogers__block-specialization {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 0 9px 0;
+  padding: 11px 0 10px 0;
   border-top: 1px solid #A1A6B4;
 }
 
@@ -844,6 +848,10 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 13px;
+}
+
+.guest-item-blogers:nth-child(5) {
+  display: none;
 }
 
 .guest-item-blogers__item {
@@ -1000,6 +1008,10 @@ body {
 /* guests-section */
 
 /* playlists-section */
+
+.playlists-section {
+  padding-top: 55px;
+}
 
 .playlist-block-left__heading {
   margin-bottom: 20px;
@@ -1342,6 +1354,7 @@ body {
 
 .about-section {
   background-color: #121723;
+  padding-top: 55px;
 }
 
 .about-block-left__heading {
@@ -1359,7 +1372,7 @@ body {
 }
 
 .about-block-left__text {
-  margin-bottom: 13px;
+  margin-bottom: 31px;
   font-size: 14px;
   line-height: 156%;
   color: #A1A6B4;
@@ -1610,8 +1623,8 @@ body {
 
 .footer__center-container {
   background-color: #121723;
-  padding-top: var(--margin-block);
-  padding-bottom: var(--margin-block);
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .footer__center-nav-mobile {
@@ -1633,7 +1646,7 @@ body {
 }
 
 .footer__center-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .footer__center-link {
@@ -1967,7 +1980,7 @@ body {
       justify-content: space-between;
       min-width: 495px;
       width: 100%;
-      margin-right: 21px;
+      margin-right: 23px;
     }
 
     .header-botton__item {
@@ -2096,6 +2109,10 @@ body {
 
 
     /* guest */
+
+    .guest-item-blogers:nth-child(5) {
+      display: block;
+    }
 
     .guests-section {
       padding-bottom: 85px;
@@ -2380,6 +2397,10 @@ body {
       padding: 23px 11.5px;
       font-size: 20px;
       line-height: 20px;
+    }
+
+    .adv-section__background {
+      max-width: 100%;
     }
 
     /* adv-section */
@@ -2867,6 +2888,10 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .broadcast-left-botton__svg {
+    margin-right: 4px;
   }
 
   .broadcast-left-botton__btn path {
