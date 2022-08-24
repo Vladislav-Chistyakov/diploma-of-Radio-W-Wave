@@ -331,7 +331,9 @@ body {
 
 .section-header-botton {
   padding: 0;
-  border: 1px solid #E6E8EC;
+  border-top: 1px solid #E6E8EC;
+  border-bottom: 1px solid #E6E8EC;
+
 }
 
 /* header-bottom */
@@ -574,6 +576,10 @@ body {
 /* podcasts-section */
 
 /* broadcast-section */
+
+.broadcast-left-botton {
+  display: none;
+}
 
 .broadcast-section {
   padding-bottom: 0;
@@ -999,7 +1005,7 @@ body {
   margin-bottom: 20px;
 }
 
-.playlist-block-left__top-block-one {
+.playlist-block-left__top-block-one, .playlist-block-left__block-lists-input, .playlist-block-left__top-block-info {
   display: none;
 }
 
@@ -1017,9 +1023,23 @@ body {
 
 .playlist-block-left__block-input-btn {
   display: flex;
-  overflow: auto;
+  overflow-x: auto;
   padding-bottom: 15px;
   margin-bottom: calc(var(--margin-block) / 2);
+}
+
+.playlist-block-left__block-input-btn .simplebar-scrollbar:before {
+  background-color: #6D31EE;
+}
+
+.playlist-block-left__block-input-btn .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  height: 3px;
+}
+
+.playlist-block-left__block-input-btn .simplebar-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
 
 .playlist-block-left__block-btn {
@@ -1354,6 +1374,21 @@ body {
   overflow: scroll;
   padding-bottom: 11px;
   margin-bottom: 19px;
+}
+
+
+.about-section__list .simplebar-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-section__list .simplebar-scrollbar:before {
+  height: 2px;
+  background-color: #fff;
+}
+
+.about-section__list .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  height: 2px;
 }
 
 .about-section__pucture {
@@ -3009,6 +3044,7 @@ body {
   }
 
   .about-section__list {
+    overflow: hidden;
     margin-bottom: 25px;
   }
 
@@ -3067,7 +3103,6 @@ body {
 /*}*/
 
 @media(min-width: 1440px) {
-
 
   .container {
     padding-left: 155px;
@@ -3174,6 +3209,14 @@ body {
 
   /* hero-section */
 
+  /* broacast */
+
+  .broadcast-left-botton__svg {
+    margin-right: 8px;
+  }
+
+  /* broacast */
+
 
   /* guest-section */
 
@@ -3227,6 +3270,7 @@ body {
   }
 
   .playlist-block-right__list {
+    justify-content: space-between;
     margin-bottom: 0;
     max-width: 730px;
   }
@@ -3234,6 +3278,15 @@ body {
   .playlist-block-left__block-lists-input {
     display: flex;
     flex-direction: column;
+  }
+
+  .playlist-block-left__list-input {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .playlist-block-left__list-item {
+    width: 350px;
   }
 
   .playlist-block-left__list-input:not(:last-child) {
@@ -3259,6 +3312,39 @@ body {
   .playlist-block-left__span-bottom-info {
     display: block;
     margin-bottom: 6px;
+  }
+
+  .playlist-block-right__background-img {
+    left: auto;
+    right: 0;
+  }
+
+  .playlist-block-left__list-input {
+    max-width: 350px;
+  }
+
+  .playlist-block-left__span {
+    margin-bottom: 9px;
+  }
+
+  .playlist-block-left__span-radio {
+    margin-right: 15px;
+  }
+
+  .playlist-block-left__block-lists-input {
+    margin-bottom: 21px;
+  }
+
+  .playlist-block-right__block-botton {
+    padding: 15px;
+  }
+
+  .playlist-block-right__name-group {
+    margin-bottom: 4px;
+  }
+
+  .playlists-section {
+    padding-bottom: 109px;
   }
 
   /* playlist */
@@ -3345,6 +3431,10 @@ body {
     max-width: 255px;
   }
 
+  .about-block-left__text {
+    margin-bottom: 0;
+  }
+
   /* about-section */
 
   /* footer */
@@ -3360,6 +3450,140 @@ body {
     padding-left: 235px;
     padding-right: 235px;
   }
+
+  /* guest-section */
+
+  .guest-block-left {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  .guest-item-blogers__block-lists {
+    display: none;
+  }
+
+  .guest-item-blogers__block-list-decstop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .list-guest-three {
+    width: calc(((100% - 15px) / 3) * 4 );
+  }
+
+  .list-guest-three {
+    padding-right: 0;
+  }
+
+  .list-guest-three:not(:last-child) {
+    margin-right: var(--margin-block);
+  }
+
+  .list-guest-three {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guest-item-blogers__item .btn {
+    height: 100%;
+  }
+
+  .guest-block-rigth__btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .guest-block-rigth__list {
+    margin-bottom: 14px;
+  }
+
+  /* guest-section */
+
+  /* playlist-section */
+
+  .playlist-block-right {
+    position: relative;
+    top: 14px;
+  }
+
+  /* playlist-section */
+
+  /* adv-section */
+
+  .adv-section {
+    padding-top: 94px;
+  }
+
+  .adv-section__background-block {
+    max-width: 640px;
+  }
+
+  .adv-section__background-block {
+    position: relative;
+    left: -6px;
+    top: 8px;
+  }
+
+  .adv-section__background-svg {
+    top: -9px;
+  }
+
+  .adv-section__background-svg {
+    width: 161px;
+    height: 161px;
+  }
+
+  .adv-section__background-block {
+    margin-right: 25px;
+  }
+
+  .adv-section {
+    padding-bottom: 133px;
+  }
+
+  /* adv-section */
+
+  /* about-section */
+
+  .about-block-right {
+    height: 292px;
+    margin-bottom: 0;
+    top: 2px;
+  }
+
+  .svg-star {
+    top: 16px;
+  }
+
+  .about-section__info {
+    margin-bottom: 29px;
+  }
+
+  .about-section__btn-left {
+    left: -78px;
+  }
+
+  .about-section__btn-right {
+    right: -78px;
+  }
+
+  .about-section__list {
+    margin-bottom: 19px;
+    padding-bottom: 10px;
+  }
+
+  /* about-section */
+
+  /* footer */
+
+  .footer__top-container {
+    padding-top: 93px;
+  }
+
+  /* footer */
+
+
 }
 
 @media(min-width: 1920px) {
@@ -3405,10 +3629,6 @@ body {
 
   .header-audio-block__block {
     width: 50%;
-  }
-
-  .header-audio-block__block {
-    padding-right: ;
   }
 
   .header-audio-block__block:last-child {
