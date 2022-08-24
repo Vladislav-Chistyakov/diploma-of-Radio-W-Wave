@@ -98,6 +98,7 @@ body {
 }
 
 .reset-text {
+  display: block;
   margin: 0;
   padding: 0;
   border: 0;
@@ -3030,7 +3031,7 @@ body {
   }
 
   .about-block-left {
-    width: calc((100% - var(--margin-blockr)) - 255px);
+    width: calc((100% - var(--margin-block)) - 255px);
     margin-right: var(--margin-block);
   }
 
