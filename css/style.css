@@ -185,7 +185,7 @@ body {
 
 /* header-center */
 
-.right-header__link-img, .right-header__nav, .right-header__menu-btn {
+.right-header__link-img, .right-header__nav, .right-header__menu-btn, .container-top-burger__block-background {
   display: none;
 }
 
@@ -236,7 +236,7 @@ body {
 .block-burger-menu {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
 }
 
@@ -258,6 +258,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 390px;
 }
 
 .container-top-burger__item-one:not(:last-child), .container-top-burger__item-two:not(:last-child) {
@@ -271,12 +272,16 @@ body {
 }
 
 .container-bottom-burger {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background-color: #fff;
   padding-top: var(--margin-block);
   padding-bottom: var(--margin-block);
+}
+
+.container-bottom-burger__block-lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 355px;
 }
 
 .container-bottom-burger__item:not(:last-child) {
@@ -2104,6 +2109,69 @@ body {
 
     /* header */
 
+    .container-bottom-burger {
+      display: none;
+    }
+
+    .block-burger-menu {
+      overflow: hidden;
+    }
+
+    .container-top-burger__block-background {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container-top-burger {
+      background-color: #D2D5DD;
+    }
+
+    .container-top-burger__btn-close {
+      margin-bottom: 54px;
+    }
+
+    .container-top-burger {
+      padding-top: 28px;
+      padding-bottom: 106px;
+    }
+
+    .container-top-burger__block-lists {
+      max-width: fit-content;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .container-top-burger__nav-two {
+      margin-right: 35px;
+    }
+
+    .container-top-burger__nav-one {
+      margin-right: 48px;
+    }
+
+    .container-top-burger__background-spiral-one {
+      background: url("../img/header/spiral-one.png") no-repeat;
+      position: absolute;
+      top: -20px;
+      width: 112px;
+      height: 354px;
+      background-size: contain;
+      margin-right: var(--margin-block);
+      z-index: 110;
+    }
+
+    .container-top-burger__background-spiral-two {
+      background: url("../img/header/spiral-two.png") no-repeat;
+      top: -156px;
+      left: 143px;
+      position: absolute;
+      width: 112px;
+      height: 354px;
+      background-size: contain;
+      z-index: 110;
+    }
+
     .left-header__link {
       height: 14px;
     }
@@ -2764,6 +2832,10 @@ body {
   /* global */
 
   /* header */
+
+  .block-burger-menu {
+    display: none;
+  }
 
   .header__right-header {
     display: flex;
