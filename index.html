@@ -17,9 +17,12 @@
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <!-- favicon -->
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css"/>
+  <link rel="stylesheet" href="./css/choices.min.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
   <!-- CSS -->
+  <!-- SCRIPT -->
+  <!-- SCRIPT -->
   <title>Радио W-Wawe</title>
 </head>
 
@@ -684,7 +687,7 @@
             <h2 class="heading broadcast-left-top__heading">Передачи</h2>
             <span class="reset-text broadcast-left-top__span">Автор:</span>
             <select name="presenter" id="presenter" class="broadcast-left-top__select">
-              <option value="Дмитрий Гутенберг">Дмитрий Гутенберг</option>
+              <option value="Дмитрий Гутенберг"><a>Дмитрий Гутенберг</a></option>
               <option value="Татьяна Флеганова">Татьяна Флеганова</option>
               <option value="Анна Васильева">Анна Васильева</option>
               <option value="Пётр Дмитриевский">Пётр Дмитриевский</option>
@@ -2168,6 +2171,15 @@
         </div>
     </div>
   </footer>
+
+  <script src="./script/choices.min.js"></script>
+
+  <script>
+    const element = document.querySelector('select');
+    const choices = new Choices(element, {
+      searchEnabled: false,
+    });
+  </script>
 
 </body>
 
