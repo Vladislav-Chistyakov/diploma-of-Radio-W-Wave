@@ -1828,12 +1828,6 @@ body {
   background-color: #AA9DFA;
 }
 
-.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted,
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
-  /*border-top: 1px solid #F5F6F7;*/
-
-}
-
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item:first-child {
   border: none;
 }
