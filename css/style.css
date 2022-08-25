@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+/* Подключение Open Sans Regular */
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('../fonts/OpenSansRegular.woff2') format('woff2'),
+		url('../fonts/OpenSansRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+
 /* Подключение Muller Regular */
 @font-face {
 	font-family: 'Muller';
@@ -64,7 +76,7 @@
 
 /* Базовые стили для работы */
 body {
-  font-family: 'Muller', sans-serif;
+  font-family: 'Muller', 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 
@@ -1240,6 +1252,16 @@ body {
   color: #A1A6B4;
 }
 
+.playlist-block-left__img {
+  padding: 7px 3px;
+  font-family: 'Sans Serif';
+  border: 1px solid #A1A6B4;
+  color: #A1A6B4;
+  max-width: var(--margin-block);
+  height: var(--margin-block);
+  border-radius: 100px;
+}
+
 /* playlists-section */
 
 /* adv-section */
@@ -2359,7 +2381,7 @@ body {
     /* playlists-section */
 
     .playlists-section {
-      padding-bottom: 91px;
+      padding-bottom: 94px;
     }
 
     .playlist-block-left__heading {
@@ -2396,7 +2418,7 @@ body {
     }
 
     .playlist-block-right__span-bottom-info {
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     .playlist-block-left__block-input-btn {
@@ -3301,7 +3323,7 @@ body {
 
   .limitations-header__desc {
     padding: 7px 4.5px;
-    /*font-family: 'Open Sans';*/
+    font-family: 'Open Sans';
     background-color: #fff;
     border-radius: 100px;
     line-height: 16px;
@@ -3791,7 +3813,7 @@ body {
 
   .limitations-header__desc {
     font-size: 12px;
-    padding: 8px 5.5px 6px;
+    padding: 8px 5px 6px;
   }
 
   .hero-section {
