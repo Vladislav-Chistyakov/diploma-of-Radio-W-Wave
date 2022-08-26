@@ -351,7 +351,57 @@ body {
   padding: 0;
   border-top: 1px solid #E6E8EC;
   border-bottom: 1px solid #E6E8EC;
+}
 
+.section-header-audio {
+  display: none;
+  position: absolute;
+  padding: 9px 32px 0;
+  width: 100%;
+  top: 150px;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.section-header-audio__block-one {
+  margin-right: 37px;
+}
+
+.section-header-audio__block-one-btn, .section-header-audio__block-two-btn {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.section-header-audio__block-one-span, .section-header-audio__block-two-span {
+  margin-bottom: 4px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #A1A6B4;
+}
+
+.section-header-audio__block-two {
+  position: relative;
+  padding-left: 37px;
+
+}
+
+.section-header-audio__block-two::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 62px;
+  width: 1px;
+  background-color: #D2D5DD;
+}
+
+.section-header-audio__block-one-text,
+.section-header-audio__block-two-text {
+  padding-bottom: 6px;
 }
 
 /* header-bottom */
@@ -1889,6 +1939,10 @@ body {
       display: block;
     }
 
+    .section-header-audio {
+      top: 186px;
+    }
+
     /* header */
 
     /* podcasts-section */
@@ -2103,6 +2157,7 @@ body {
 
     /* header */
 
+    .section-header-audio,
     .container-bottom-burger {
       display: none;
     }
@@ -2175,6 +2230,7 @@ body {
     }
 
     .section-header-botton {
+      position: relative;
       padding: 0;
     }
 
