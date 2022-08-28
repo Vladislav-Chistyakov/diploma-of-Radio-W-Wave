@@ -137,7 +137,6 @@ body {
   outline: none;
 }
 
-
 /* header */
 
 .header {
@@ -4161,6 +4160,25 @@ body {
 }
 
 /* media */
+
+
+
+/* JavaScript-class */
+
+.activ-block {
+  display: block;
+}
+
+.activ-flex {
+  display: flex;
+}
+
+.active-none {
+  display: none;
+}
+
+/* JavaScript-class */
+
 
 
 
