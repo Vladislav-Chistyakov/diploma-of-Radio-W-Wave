@@ -142,16 +142,19 @@
             </button>
           </div>
           <div class="right-header__block-btn">
-            <button class="btn right-header__search-btn">
-              <svg class="right-header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.9999 21L16.6499 16.65" stroke="none" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
+            <div class="right-header__block-search">
+              <input type="text" class="right-header__input-searc reset-text" placeholder="Поиск по сайту">
+              <button class="btn right-header__search-btn">
+                <svg class="right-header__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.9999 21L16.6499 16.65" stroke="none" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
             <button class="btn right-header__menu-btn header-login-button">Вход</button>
           </div>
         </div>
@@ -197,6 +200,34 @@
                 fill="none" />
             </svg>
           </button>
+          <div class="header-botton__header-audio-block header-audio-block">
+            <div class="header-audio-block__block">
+              <button class="btn header-audio-block__btn-start">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                    fill="none" />
+                </svg>
+              </button>
+              <div class="header-audio-block__info-audio">
+                <span class="reset-text header-audio-block__span-info">Ранее в эфире</span>
+                <p class="reset-text header-audio-block__name-audio">&laquo;Музыка&raquo;</p>
+              </div>
+            </div>
+              <div class="header-audio-block__block">
+                <button class="btn header-audio-block__btn-start">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                      fill="none" />
+                  </svg>
+                </button>
+                <div class="header-audio-block__info-audio">
+                  <span class="reset-text header-audio-block__span-info">Сейчас в эфире</span>
+                  <p class="reset-text header-audio-block__name-audio">&laquo;Как так?&raquo;</p>
+                </div>
+              </div>
+          </div>
           <div class="header-botton__limitations-header limitations-header">
             <p class="reset-text limitations-header__desc">12+</p>
           </div>

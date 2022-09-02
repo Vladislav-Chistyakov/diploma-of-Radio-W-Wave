@@ -133,7 +133,9 @@ body {
 .about-form-block__texteria:focus,
 .about-form-block__input-name:focus,
 .about-form-block__input-email:focus,
-.about-form-block__checkbox:focus, .playlist-block-left__radio:focus {
+.about-form-block__checkbox:focus,
+.playlist-block-left__radio:focus,
+.right-header__input-searc:focus {
   outline: none;
 }
 
@@ -332,7 +334,34 @@ body {
 /* BURGER menu */
 
 .right-header__block-btn {
+  position: relative;
   max-height: 24px;
+  display: flex;
+}
+
+.right-header__block-search {
+  display: flex;
+}
+
+.right-header__input-searc {
+  padding: 0;
+  position: relative;
+  display: none;
+  border: none;
+  border-bottom: 2px solid #6D31EE;
+  min-width: 152px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.right-header__input-searc-js{
+  opacity: 1;
+}
+
+.right-header__input-searc::placeholder {
+  font-size: 16px;
+  line-height: 16px;
+  color: #A1A6B4;
 }
 
 .right-header__search-btn {
@@ -1994,7 +2023,6 @@ body {
     }
 
     .right-header__block-btn {
-      display: flex;
       align-items: center;
       max-height: 100%;
     }
