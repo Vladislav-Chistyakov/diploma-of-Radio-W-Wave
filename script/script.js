@@ -11,6 +11,7 @@ function btnHeader() {
 
   const btnSearch = body.querySelector(".right-header__search-btn");
   const inputSearc = body.querySelector(".right-header__input-searc");
+  const blockSearch = body.querySelector(".right-header__block-search");
 
   btnOpenBurger.addEventListener("click", () => {
     burgerBlock.classList.add("activ-block");
@@ -40,9 +41,11 @@ function btnHeader() {
     if (inputSearc.classList[2] === undefined) {
       inputSearc.classList.add("right-header__input-searc-js");
       inputSearc.classList.add("activ-block");
+      blockSearch.classList.add("right-header__block-search-js");
     } else {
       inputSearc.classList.remove("right-header__input-searc-js");
-      inputSearc.classList.remove("activ-block");
+      blockSearch.classList.remove("right-header__block-search-js");
+      setTimeout(() => inputSearc.classList.remove("activ-block"), 500);
     }
   })
 
