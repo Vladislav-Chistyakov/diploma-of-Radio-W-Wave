@@ -18,6 +18,7 @@
   <!-- favicon -->
   <!-- CSS -->
   <link rel="stylesheet" href="./css/normalize.css"/>
+  <link rel="stylesheet" href="./css/accordion.min.css"/>
   <link rel="stylesheet" href="./css/choices.min.css"/>
   <link rel="stylesheet" href="./css/style.css"/>
   <!-- CSS -->
@@ -506,7 +507,7 @@
             <div class="podcast-list__img-block">
               <picture class="podcast-list__picture">
                 <source media="(min-width: 576px)" srcset="./img/podcasts/podcast-5-576px.jpg">
-                <img src="./img/podcasts/podcast-5.jpg" alt="Подкаст" class="podcast-list__img">
+                <img src="./img/podcasts/podcast-1.jpg" alt="Подкаст" class="podcast-list__img">
               </picture>
               <time class="podcast-list__date"  datetime="2021-06-02T00:00:00">2 июня</time>
             </div>
@@ -557,7 +558,7 @@
             <div class="podcast-list__img-block">
               <picture class="podcast-list__picture">
                 <source media="(min-width: 576px)" srcset="./img/podcasts/podcast-6-576px.jpg">
-                <img src="./img/podcasts/podcast-6.jpg" alt="Подкаст" class="podcast-list__img">
+                <img src="./img/podcasts/podcast-2.jpg" alt="Подкаст" class="podcast-list__img">
               </picture>
               <time class="podcast-list__date" datetime="2021-05-28T00:00:00">28 мая</time>
             </div>
@@ -608,7 +609,7 @@
             <div class="podcast-list__img-block">
               <picture class="podcast-list__picture">
                 <source media="(min-width: 576px)" srcset="./img/podcasts/podcast-7-576px.jpg">
-                <img src="./img/podcasts/podcast-7.jpg" alt="Подкаст" class="podcast-list__img">
+                <img src="./img/podcasts/podcast-3.jpg" alt="Подкаст" class="podcast-list__img">
               </picture>
               <time class="podcast-list__date"  datetime="2021-05-22T00:00:00">22 мая</time>
             </div>
@@ -659,7 +660,7 @@
             <div class="podcast-list__img-block">
               <picture class="podcast-list__picture">
                 <source media="(min-width: 576px)" srcset="./img/podcasts/podcast-8-576px.jpg">
-                <img src="./img/podcasts/podcast-8.jpg" alt="Подкаст" class="podcast-list__img">
+                <img src="./img/podcasts/podcast-4.jpg" alt="Подкаст" class="podcast-list__img">
               </picture>
               <time class="podcast-list__date"  datetime="2021-05-18T00:00:00">18 мая</time>
             </div>
@@ -878,17 +879,17 @@
         <div class="guests-section__block">
             <ul class="reset-list guests-section__guest-block-left guest-block-left">
 
-              <li class="guest-block-left__item guest-item-blogers">
+              <li class="guest-block-left__item guest-item-blogers accordion-block accordion-active">
                 <div class="guest-item-blogers__block-specialization">
                  <h3 class="heading guest-item-blogers__specialization">Историки</h3>
-                 <button class="guest-item-blogers__btn btn">
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                   </svg>
                  </button>
                 </div>
-                <ul class="reset-list guest-item-blogers__list list-guest-one">
+                <ul class="accordion-panel accordion-active-panel reset-list guest-item-blogers__list list-guest-one">
                   <li class="guest-item-blogers__item">
                     <button class="guest-item-blogers__item-btn btn">
                       Сергей Денисов
@@ -966,7 +967,7 @@
                   </li>
                 </ul>
 
-                <div class="guest-item-blogers__block-lists">
+                <div class="accordion-panel accordion-active-panel guest-item-blogers__block-lists">
 
                   <ul class="reset-list guest-item-blogers__list list-guest-two">
 
@@ -1072,7 +1073,7 @@
 
                 </div>
 
-                <div class="guest-item-blogers__block-list-decstop">
+                <div class="accordion-panel accordion-active-panel guest-item-blogers__block-list-decstop">
 
                   <ul class="reset-list guest-item-blogers__list list-guest-three">
 
@@ -1190,113 +1191,17 @@
 
               </li>
 
-              <li class="guest-block-left__item guest-item-blogers">
+              <li class="guest-block-left__item guest-item-blogers accordion-block">
                 <div class="guest-item-blogers__block-specialization">
                  <h3 class="heading guest-item-blogers__specialization">Арт-критики</h3>
-                 <button class="guest-item-blogers__btn btn">
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                   </svg>
                  </button>
                 </div>
-                <!--<ul class="reset-list guest-item-blogers__list">
-                  <li class="guest-item-blogers__item">Сергей Денисов</li>
-                  <li class="guest-item-blogers__item">Матвей Мечников</li>
-                  <li class="guest-item-blogers__item">Константин Прусино</li>
-                  <li class="guest-item-blogers__item">Иван Калитников</li>
-
-                  <li class="guest-item-blogers__item">Евгений Войновский</li>
-                  <li class="guest-item-blogers__item">Ольга Мартынова</li>
-                  <li class="guest-item-blogers__item">Дмитрий Михалок</li>
-                  <li class="guest-item-blogers__item">Пётр Пиотровский</li>
-
-                  <li class="guest-item-blogers__item">Олег Свиридовский</li>
-                  <li class="guest-item-blogers__item">Владислав Кауперс</li>
-                  <li class="guest-item-blogers__item">Михаил Пожитников</li>
-                  <li class="guest-item-blogers__item">Георгий Полуян</li>
-
-                  <li class="guest-item-blogers__item">Денис Тельман</li>
-                  <li class="guest-item-blogers__item">Юрий Горин</li>
-                  <li class="guest-item-blogers__item">Максим Сергеев</li>
-                </ul>-->
-              </li>
-
-              <li class="guest-block-left__item guest-item-blogers">
-                <div class="guest-item-blogers__block-specialization">
-                 <h3 class="heading guest-item-blogers__specialization">Художники</h3>
-                 <button class="guest-item-blogers__btn btn">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
-                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                  </svg>
-                 </button>
-                </div>
-                <!--<ul class="reset-list guest-item-blogers__list">
-                  <li class="guest-item-blogers__item">Сергей Денисов</li>
-                  <li class="guest-item-blogers__item">Матвей Мечников</li>
-                  <li class="guest-item-blogers__item">Константин Прусино</li>
-                  <li class="guest-item-blogers__item">Иван Калитников</li>
-
-                  <li class="guest-item-blogers__item">Евгений Войновский</li>
-                  <li class="guest-item-blogers__item">Ольга Мартынова</li>
-                  <li class="guest-item-blogers__item">Дмитрий Михалок</li>
-                  <li class="guest-item-blogers__item">Пётр Пиотровский</li>
-
-                  <li class="guest-item-blogers__item">Олег Свиридовский</li>
-                  <li class="guest-item-blogers__item">Владислав Кауперс</li>
-                  <li class="guest-item-blogers__item">Михаил Пожитников</li>
-                  <li class="guest-item-blogers__item">Георгий Полуян</li>
-
-                  <li class="guest-item-blogers__item">Денис Тельман</li>
-                  <li class="guest-item-blogers__item">Юрий Горин</li>
-                  <li class="guest-item-blogers__item">Максим Сергеев</li>
-                </ul>-->
-              </li>
-
-              <li class="guest-block-left__item guest-item-blogers">
-                <div class="guest-item-blogers__block-specialization">
-                 <h3 class="heading guest-item-blogers__specialization">Люди науки</h3>
-                 <button class="guest-item-blogers__btn btn">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
-                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                  </svg>
-                 </button>
-                </div>
-                <!--<ul class="reset-list guest-item-blogers__list">
-                  <li class="guest-item-blogers__item">Сергей Денисов</li>
-                  <li class="guest-item-blogers__item">Матвей Мечников</li>
-                  <li class="guest-item-blogers__item">Константин Прусино</li>
-                  <li class="guest-item-blogers__item">Иван Калитников</li>
-
-                  <li class="guest-item-blogers__item">Евгений Войновский</li>
-                  <li class="guest-item-blogers__item">Ольга Мартынова</li>
-                  <li class="guest-item-blogers__item">Дмитрий Михалок</li>
-                  <li class="guest-item-blogers__item">Пётр Пиотровский</li>
-
-                  <li class="guest-item-blogers__item">Олег Свиридовский</li>
-                  <li class="guest-item-blogers__item">Владислав Кауперс</li>
-                  <li class="guest-item-blogers__item">Михаил Пожитников</li>
-                  <li class="guest-item-blogers__item">Георгий Полуян</li>
-
-                  <li class="guest-item-blogers__item">Денис Тельман</li>
-                  <li class="guest-item-blogers__item">Юрий Горин</li>
-                  <li class="guest-item-blogers__item">Максим Сергеев</li>
-                </ul>-->
-              </li>
-
-              <li class="guest-block-left__item guest-item-blogers">
-                <div class="guest-item-blogers__block-specialization">
-                 <h3 class="heading guest-item-blogers__specialization">Историки</h3>
-                 <button class="guest-item-blogers__btn btn">
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
-                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                  </svg>
-                 </button>
-                </div>
-                <!--<ul class="reset-list guest-item-blogers__list list-guest-one">
+                <ul class="accordion-panel reset-list guest-item-blogers__list list-guest-one">
                   <li class="guest-item-blogers__item">
                     <button class="guest-item-blogers__item-btn btn">
                       Сергей Денисов
@@ -1374,7 +1279,7 @@
                   </li>
                 </ul>
 
-                <div class="guest-item-blogers__block-lists">
+                <div class="accordion-panel guest-item-blogers__block-lists">
 
                   <ul class="reset-list guest-item-blogers__list list-guest-two">
 
@@ -1478,39 +1383,1367 @@
 
                   </ul>
 
-                </div>-->
+                </div>
+
+                <div class="accordion-panel guest-item-blogers__block-list-decstop">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
               </li>
 
-              <li class="guest-block-left__item guest-item-blogers">
+              <li class="guest-block-left__item guest-item-blogers accordion-block">
                 <div class="guest-item-blogers__block-specialization">
-                 <h3 class="heading guest-item-blogers__specialization">Филологи</h3>
-                 <button class="guest-item-blogers__btn btn">
+                 <h3 class="heading guest-item-blogers__specialization">Художники</h3>
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                   </svg>
                  </button>
                 </div>
-                <!--<ul class="reset-list guest-item-blogers__list">
-                  <li class="guest-item-blogers__item">Сергей Денисов</li>
-                  <li class="guest-item-blogers__item">Матвей Мечников</li>
-                  <li class="guest-item-blogers__item">Константин Прусино</li>
-                  <li class="guest-item-blogers__item">Иван Калитников</li>
+                <ul class="accordion-panel reset-list guest-item-blogers__list list-guest-one">
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Сергей Денисов
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Евгений Войновский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Матвей Мечников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Ольга Мартынова
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Константин Прусино
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Дмитрий Михалок
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Иван Калитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Пётр Пиотровский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Денис Тельман
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Юрий Горин
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Олег Свиридовский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Владислав Кауперс
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Михаил Пожитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Георгий Полуян
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Максим Сергеев
+                    </button>
+                  </li>
+                </ul>
 
-                  <li class="guest-item-blogers__item">Евгений Войновский</li>
-                  <li class="guest-item-blogers__item">Ольга Мартынова</li>
-                  <li class="guest-item-blogers__item">Дмитрий Михалок</li>
-                  <li class="guest-item-blogers__item">Пётр Пиотровский</li>
+                <div class="accordion-panel guest-item-blogers__block-lists">
 
-                  <li class="guest-item-blogers__item">Олег Свиридовский</li>
-                  <li class="guest-item-blogers__item">Владислав Кауперс</li>
-                  <li class="guest-item-blogers__item">Михаил Пожитников</li>
-                  <li class="guest-item-blogers__item">Георгий Полуян</li>
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
 
-                  <li class="guest-item-blogers__item">Денис Тельман</li>
-                  <li class="guest-item-blogers__item">Юрий Горин</li>
-                  <li class="guest-item-blogers__item">Максим Сергеев</li>
-                </ul>-->
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="accordion-panel guest-item-blogers__block-list-decstop">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+
+              <li class="guest-block-left__item guest-item-blogers accordion-block">
+                <div class="guest-item-blogers__block-specialization">
+                 <h3 class="heading guest-item-blogers__specialization">Люди науки</h3>
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
+                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                 </button>
+                </div>
+                <ul class="accordion-panel reset-list guest-item-blogers__list list-guest-one">
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Сергей Денисов
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Евгений Войновский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Матвей Мечников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Ольга Мартынова
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Константин Прусино
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Дмитрий Михалок
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Иван Калитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Пётр Пиотровский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Денис Тельман
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Юрий Горин
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Олег Свиридовский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Владислав Кауперс
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Михаил Пожитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Георгий Полуян
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Максим Сергеев
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="accordion-panel guest-item-blogers__block-lists">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="accordion-panel guest-item-blogers__block-list-decstop">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+
+              <li class="guest-block-left__item guest-item-blogers accordion-block">
+                <div class="guest-item-blogers__block-specialization">
+                 <h3 class="heading guest-item-blogers__specialization">Историки</h3>
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
+                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                 </button>
+                </div>
+                <ul class="accordion-panel reset-list guest-item-blogers__list list-guest-one">
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Сергей Денисов
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Евгений Войновский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Матвей Мечников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Ольга Мартынова
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Константин Прусино
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Дмитрий Михалок
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Иван Калитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Пётр Пиотровский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Денис Тельман
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Юрий Горин
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Олег Свиридовский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Владислав Кауперс
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Михаил Пожитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Георгий Полуян
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Максим Сергеев
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="accordion-panel guest-item-blogers__block-lists">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="accordion-panel guest-item-blogers__block-list-decstop">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+
+              <li class="guest-block-left__item guest-item-blogers accordion-block">
+                <div class="guest-item-blogers__block-specialization">
+                 <h3 class="heading guest-item-blogers__specialization">Филологи</h3>
+                 <button class="guest-item-blogers__btn btn accordion-trigger">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="14" cy="14" r="12.125" stroke="#A1A6B4" stroke-width="2"/>
+                    <path d="M9 12.75L14 17.75L19 12.75" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                  </svg>
+                 </button>
+                </div>
+                <ul class="accordion-panel reset-list guest-item-blogers__list list-guest-one">
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Сергей Денисов
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Евгений Войновский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Матвей Мечников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Ольга Мартынова
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Константин Прусино
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Дмитрий Михалок
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Иван Калитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Пётр Пиотровский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Денис Тельман
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Юрий Горин
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Олег Свиридовский
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Владислав Кауперс
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Михаил Пожитников
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Георгий Полуян
+                    </button>
+                  </li>
+                  <li class="guest-item-blogers__item">
+                    <button class="guest-item-blogers__item-btn btn">
+                      Максим Сергеев
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="accordion-panel guest-item-blogers__block-lists">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-two">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="accordion-panel guest-item-blogers__block-list-decstop">
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Сергей Денисов
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Матвей Мечников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Константин Прусино
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Иван Калитников
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Евгений Войновский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Ольга Мартынова
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Дмитрий Михалок
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Пётр Пиотровский
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Олег Свиридовский
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Владислав Кауперс
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Михаил Пожитников
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Георгий Полуян
+                      </button>
+                    </li>
+
+
+
+                  </ul>
+
+                  <ul class="reset-list guest-item-blogers__list list-guest-three">
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Денис Тельман
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Юрий Горин
+                      </button>
+                    </li>
+
+                    <li class="guest-item-blogers__item">
+                      <button class="guest-item-blogers__item-btn btn">
+                        Максим Сергеев
+                      </button>
+                    </li>
+
+                  </ul>
+
+                </div>
               </li>
 
             </ul>
@@ -2205,6 +3438,8 @@
         </div>
     </div>
   </footer>
+
+  <script src="./script/accordion.min.js"></script>
 
   <script src="./script/choices.min.js"></script>
 

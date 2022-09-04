@@ -1,0 +1,20 @@
+.accordion-block {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.accordion-panel {
+  position: relative;
+  height: 0;
+  left: -100%;
+  opacity:0;
+  transition: opacity .7s ease-in, left .7s ease-in;
+  border: none;
+}
+
+.accordion-active-panel {
+  height: 100%;
+  left: 0;
+  opacity:1;
+}

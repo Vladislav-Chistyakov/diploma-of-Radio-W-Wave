@@ -1,3 +1,7 @@
+function output() {
+  btnHeader();
+  openingAdditionalPodcasts();
+}
 
 function btnHeader() {
   const body = document.body;
@@ -20,6 +24,7 @@ function btnHeader() {
   btnCloseBurger.addEventListener("click", () => {
     burgerBlock.classList.remove("activ-block");
   })
+
 
   btnEther.addEventListener("click", () => {
     let status = 0;
@@ -48,13 +53,23 @@ function btnHeader() {
       setTimeout(() => inputSearc.classList.remove("activ-block"), 500);
     }
   })
+}
 
-
+function openingAdditionalPodcasts() {
+  const btnPodcasts = document.body.querySelector(".podcasts-section__btn");
+  btnPodcasts.addEventListener("click", () => {
+    let podcasts = document.body.querySelectorAll(".podcast-list__item");
+    for (let i = 0; i < podcasts.length; i++) {
+      podcasts[i].style.display = "block";
+    }
+  })
 }
 
 
+output();
 
-btnHeader();
+
+
 
 
 
