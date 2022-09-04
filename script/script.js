@@ -1,6 +1,7 @@
 function output() {
   btnHeader();
   openingAdditionalPodcasts();
+  renderingGuestInformation();
 }
 
 function btnHeader() {
@@ -60,11 +61,62 @@ function openingAdditionalPodcasts() {
   btnPodcasts.addEventListener("click", () => {
     let podcasts = document.body.querySelectorAll(".podcast-list__item");
     for (let i = 0; i < podcasts.length; i++) {
-      podcasts[i].style.display = "block";
+      if (window.innerWidth < 576) {
+        podcasts[i].style.display = "block";
+      } else {
+        podcasts[i].style.display = "flex";
+      }
     }
   })
 }
 
+function renderingGuestInformation() {
+
+  let header = document.body.querySelector(".guest-block-rigth__heading-name");
+  let comment = document.body.querySelector(".guest-block-rigth__info-person");
+  let btnPerson = document.body.querySelectorAll(".guest-item-blogers__item-btn");
+
+  let infoGuests = {
+    name: ["Ольга Мартынова", "Сергей Денисов", "Евгений Войновский", "Матвей Мечников", "Константин Прусино", "Дмитрий Михалок", "Иван Калитников", "Пётр Пиотровский", "Денис Тельман", "Юрий Горин", "Олег Свиридовский", "Владислав Кауперс", "Михаил Пожитников", "Георгий Полуян", "Максим Сергеев" ],
+    comment: ["Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.", "Просто Сергей", "Просто Евгений", "Просто Матвей", "Просто Константин", "Просто Дмитрий", "Просто Иван", "Просто Пётр", "Просто Сергей", "Просто Денис", "Просто Юрий", "Просто Олег", "Просто Кауперс", "Просто Пожитников", "Просто Полуян", "Просто Максим Сергеев" ],
+    image: [],
+  }
+
+
+  //console.log(searchHuestInformation(guests, infoGuests))
+
+  for (let i = 0; i < btnPerson.length; i++) {
+    btnPerson[i].addEventListener("click", () => {
+      searchHuestInformation(btnPerson[i].textContent, infoGuests);
+    })
+  }
+
+  function searchHuestInformation(guest, infoGuests) {
+    let com;
+    let name = guest;
+    let name2 = '';
+    for (let i = 0; i < name.length; i++) {
+      if (name[i] !== name[i + 1] && (name[i] !== " " && name[i + 1] !== name[i])) {
+        console.log(name2);
+
+        name2 =  name2 + name[i];
+        console.log(name2 + '/n/n');
+
+      }
+    }
+
+    for (let i = 0; i < infoGuests.name.length; i++) {
+      if (name2 === infoGuests.name[i]) {
+        com = infoGuests.comment[i];
+        console.log(com);
+        return name2, com;
+      }
+    }
+  }
+
+
+
+}
 
 output();
 
