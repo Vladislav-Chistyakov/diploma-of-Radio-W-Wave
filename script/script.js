@@ -75,47 +75,76 @@ function renderingGuestInformation() {
   let header = document.body.querySelector(".guest-block-rigth__heading-name");
   let comment = document.body.querySelector(".guest-block-rigth__info-person");
   let btnPerson = document.body.querySelectorAll(".guest-item-blogers__item-btn");
+  let geustImg = document.body.querySelector(".guest-block-rigth__img-picture");
+
+  let imgGuestDecstop = document.body.querySelector(".guest-block-rigth__source-1024px");
+  let imgGuestMedium = document.body.querySelector(".guest-block-rigth__source-576px");
+  let imgGustMobile = document.body.querySelector(".guest-block-rigth__img-qu");
 
   let infoGuests = {
-    name: ["Ольга Мартынова", "Сергей Денисов", "Евгений Войновский", "Матвей Мечников", "Константин Прусино", "Дмитрий Михалок", "Иван Калитников", "Пётр Пиотровский", "Денис Тельман", "Юрий Горин", "Олег Свиридовский", "Владислав Кауперс", "Михаил Пожитников", "Георгий Полуян", "Максим Сергеев" ],
+    name: ["Ольга Мартынова", "Сергей Денисов", "Евгений Войновский", "Матвей Мечников", "Константин Прусино", "Дмитрий Михалок", "Иван Калитников", "Пётр Пиотровский", "Денис Тельман", "Юрий Горин", "Олег Свиридовский", "Владислав Кауперс", "Михаил Пожитников", "Максим Сергеев",  "Георгий Полуян"],
     comment: ["Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.", "Просто Сергей", "Просто Евгений", "Просто Матвей", "Просто Константин", "Просто Дмитрий", "Просто Иван", "Просто Пётр", "Просто Сергей", "Просто Денис", "Просто Юрий", "Просто Олег", "Просто Кауперс", "Просто Пожитников", "Просто Полуян", "Просто Максим Сергеев" ],
-    image: [],
+    image: [["./img/guests/Olga-Martinova-1024px.jpg", "./img/guests/Olga-Martinova-576px.jpg", "./img/guests/Olga-Martinova.jpg"], ["./img/guests/background-auto-1024px.jpg", "./img/guests/background-auto-576px.jpg", "./img/guests/background-auto.jpg"]],
   }
 
+  console.log(infoGuests.image);
+  console.log(imgGuestDecstop);
+  console.log(imgGuestMedium);
+  console.log(imgGustMobile);
 
-  //console.log(searchHuestInformation(guests, infoGuests))
 
   for (let i = 0; i < btnPerson.length; i++) {
     btnPerson[i].addEventListener("click", () => {
-      searchHuestInformation(btnPerson[i].textContent, infoGuests);
+      let imgNumber = searchHuestInformation(btnPerson[i].textContent, infoGuests)[2];
+
+      header.textContent = searchHuestInformation(btnPerson[i].textContent, infoGuests)[0];
+      comment.textContent = searchHuestInformation(btnPerson[i].textContent, infoGuests)[1];
+      //imgGuestDecstop.srcset =  infoGuests.img[imgNumber];
+      for (let i = 0; i < 3; i++) {
+        if (i === 0) {
+          imgGuestDecstop.srcset = infoGuests.image[imgNumber][i];
+        } else if (i === 1) {
+          imgGuestMedium.srcset = infoGuests.image[imgNumber][i];
+        } else {
+          imgGustMobile.srcset = infoGuests.image[imgNumber][i];
+        }
+        //infoGuests.image[imgNumber][2]
+        //console.log(infoGuests.image[imgNumber][2]);
+      }
+      console.log(imgNumber);
     })
   }
 
   function searchHuestInformation(guest, infoGuests) {
     let com;
+    let img;
     let name = guest;
     let name2 = '';
     for (let i = 0; i < name.length; i++) {
-      if (name[i] !== name[i + 1] && (name[i] !== " " && name[i + 1] !== name[i])) {
-        console.log(name2);
-
-        name2 =  name2 + name[i];
-        console.log(name2 + '/n/n');
-
+      if (name[i] + name[i+1] !== "  " && name[i - 1] + name[i] !== "  ") {
+          name2 =  name2 + name[i];
+      }
+    }
+    name = "";
+    for (let i = 0; i < name2.length; i++) {
+      if (i !== 0 && i !== name2.length - 1) {
+        name = name + name2[i];
       }
     }
 
     for (let i = 0; i < infoGuests.name.length; i++) {
-      if (name2 === infoGuests.name[i]) {
+      if (name === infoGuests.name[i]) {
         com = infoGuests.comment[i];
-        console.log(com);
-        return name2, com;
+        if (i === 0) {
+          img = 0;
+          return [name, com, img];
+        } else {
+          img = 1;
+          return [name, com, img];
+        }
       }
     }
   }
-
-
-
 }
 
 output();
