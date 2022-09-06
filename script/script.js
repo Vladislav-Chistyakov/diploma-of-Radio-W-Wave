@@ -2,6 +2,7 @@ function output() {
   btnHeader();
   openingAdditionalPodcasts();
   renderingGuestInformation();
+  validateForm();
 }
 
 function btnHeader() {
@@ -75,7 +76,6 @@ function renderingGuestInformation() {
   let header = document.body.querySelector(".guest-block-rigth__heading-name");
   let comment = document.body.querySelector(".guest-block-rigth__info-person");
   let btnPerson = document.body.querySelectorAll(".guest-item-blogers__item-btn");
-  let geustImg = document.body.querySelector(".guest-block-rigth__img-picture");
 
   let imgGuestDecstop = document.body.querySelector(".guest-block-rigth__source-1024px");
   let imgGuestMedium = document.body.querySelector(".guest-block-rigth__source-576px");
@@ -87,19 +87,12 @@ function renderingGuestInformation() {
     image: [["./img/guests/Olga-Martinova-1024px.jpg", "./img/guests/Olga-Martinova-576px.jpg", "./img/guests/Olga-Martinova.jpg"], ["./img/guests/background-auto-1024px.jpg", "./img/guests/background-auto-576px.jpg", "./img/guests/background-auto.jpg"]],
   }
 
-  console.log(infoGuests.image);
-  console.log(imgGuestDecstop);
-  console.log(imgGuestMedium);
-  console.log(imgGustMobile);
-
-
   for (let i = 0; i < btnPerson.length; i++) {
     btnPerson[i].addEventListener("click", () => {
       let imgNumber = searchHuestInformation(btnPerson[i].textContent, infoGuests)[2];
 
       header.textContent = searchHuestInformation(btnPerson[i].textContent, infoGuests)[0];
       comment.textContent = searchHuestInformation(btnPerson[i].textContent, infoGuests)[1];
-      //imgGuestDecstop.srcset =  infoGuests.img[imgNumber];
       for (let i = 0; i < 3; i++) {
         if (i === 0) {
           imgGuestDecstop.srcset = infoGuests.image[imgNumber][i];
@@ -108,10 +101,7 @@ function renderingGuestInformation() {
         } else {
           imgGustMobile.srcset = infoGuests.image[imgNumber][i];
         }
-        //infoGuests.image[imgNumber][2]
-        //console.log(infoGuests.image[imgNumber][2]);
       }
-      console.log(imgNumber);
     })
   }
 
@@ -145,6 +135,67 @@ function renderingGuestInformation() {
       }
     }
   }
+}
+
+function validateForm() {
+  let texteria = document.querySelector(".about-form-block__texteria");
+  let inputName = document.querySelector(".about-form-block__input-name");
+  let inputEmail = document.querySelector(".about-form-block__input-email");
+  let buttonSubmit = document.querySelector(".about-form-block__btn");
+  let spanInvaled = document.querySelectorAll(".span-invaled");
+
+  let valueTexteria = "";
+  let valueInputName = "";
+  let valueInputEmail = "";
+
+
+  texteria.addEventListener("input", () => {
+    valueTexteria = texteria.value;
+  })
+
+  inputName.addEventListener("input", () => {
+    valueInputName = inputName.value;
+  })
+
+  inputEmail.addEventListener("input", () => {
+    valueInputEmail = inputEmail.value;
+  })
+
+  buttonSubmit.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    let arrayInputValue = [valueTexteria, valueInputName, valueInputEmail]
+    let arrayInput = [texteria, inputName, inputEmail]
+
+
+    console.log(event);
+    console.log(valueInputEmail)
+    console.log(valueInputName)
+    console.log(valueTexteria)
+
+
+
+    if (checkingForEmptiness(arrayInputValue, arrayInput)) {
+      console.log("ОШИБКА!");
+    }
+
+    function checkingForEmptiness(array, arrayInput) {
+      let err = 0;
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] === "") {
+          err = 1;
+          console.log(arrayInput[i]);
+          spanInvaled[i].classList.add("span-invaled-active");
+          arrayInput[i].classList.add("invalide-input");
+        }
+      }
+      return err;
+    }
+
+  })
+
+
+
 }
 
 output();
