@@ -142,18 +142,18 @@ function validateForm() {
   let inputName = document.querySelector(".about-form-block__input-name");
   let inputEmail = document.querySelector(".about-form-block__input-email");
   let buttonSubmit = document.querySelector(".about-form-block__btn");
-  let spanInvaled = document.querySelectorAll(".span-invaled");
 
+  // Значения в полях input
   let valueTexteria = "";
   let valueInputName = "";
   let valueInputEmail = "";
-
 
   texteria.addEventListener("input", () => {
     valueTexteria = texteria.value;
   })
 
   inputName.addEventListener("input", () => {
+    inputName.value = inputName.value.replace(/[^а-я]/g, '');
     valueInputName = inputName.value;
   })
 
@@ -162,40 +162,57 @@ function validateForm() {
   })
 
   buttonSubmit.addEventListener("click", (event) => {
-    event.preventDefault();
 
-    let arrayInputValue = [valueTexteria, valueInputName, valueInputEmail]
-    let arrayInput = [texteria, inputName, inputEmail]
-
-
-    console.log(event);
-    console.log(valueInputEmail)
-    console.log(valueInputName)
-    console.log(valueTexteria)
-
-
-
-    if (checkingForEmptiness(arrayInputValue, arrayInput)) {
-      console.log("ОШИБКА!");
-    }
-
-    function checkingForEmptiness(array, arrayInput) {
+    //Функция проверки на количество символов
+    function checkingNumberCharacters() {
       let err = 0;
-      for (let i = 0; i < array.length; i++) {
-        if (array[i] === "") {
+      if (valueTexteria.length < 5) {
+        invaledInput(texteria, texteria.nextElementSibling);
+        err = 1;
+      } else {
+        valedInput(texteria, texteria.nextElementSibling);
+      }
+
+      if (valueInputName.length < 2) {
+        invaledInput(inputName, inputName.nextElementSibling);
+        err = 1;
+      } else {
+        valedInput(inputName, inputName.nextElementSibling)
+
+      }
+
+      if (valueInputEmail.length < 8) {
+        invaledInput(inputEmail, inputEmail.nextElementSibling);
+        err = 1;
+      } else {
+        if (valueInputEmail.indexOf("@") < 0) {
+          invaledInput(inputEmail, inputEmail.nextElementSibling);
           err = 1;
-          console.log(arrayInput[i]);
-          spanInvaled[i].classList.add("span-invaled-active");
-          arrayInput[i].classList.add("invalide-input");
+        } else {
+          valedInput(inputEmail, inputEmail.nextElementSibling);
         }
       }
       return err;
     }
 
+    checkingNumberCharacters();
+
+    if (checkingNumberCharacters()) {
+      event.preventDefault();
+    }
+
+    // Отрисовка стилей с ошибкой данных
+    function invaledInput(input, span) {
+      span.classList.add("span-invaled-active");
+      input.classList.add("invalide-input");
+    }
+
+    // Отрисовка стилей с верными данными
+    function valedInput(input, span) {
+      span.classList.remove("span-invaled-active");
+      input.classList.remove("invalide-input");
+    }
   })
-
-
-
 }
 
 output();
