@@ -226,14 +226,18 @@ function swiper() {
       // when window width is >= 320px
       320: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 12,
       },
-      // when window width is >= 640px
+      // when window width is >= 768px
+      768: {
+        spaceBetween: 30,
+      },
+
+      // when window width is >= 1440px
       1440: {
         slidesPerView: 4,
         slidesPerGroup: 2,
         spaceBetween: 30
-
       }
     },
     slidesPerView: 2,

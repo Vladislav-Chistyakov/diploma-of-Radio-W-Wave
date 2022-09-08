@@ -153,6 +153,11 @@ body {
   padding: 9px 0 10px 0;
 }
 
+.left-header__link {
+  position: relative;
+  top: 2px;
+}
+
 .left-header__container {
   display: flex;
   justify-content: space-between;
@@ -977,7 +982,7 @@ body {
 }
 
 .guest-block-left {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .accordion-active .guest-item-blogers__block-specialization {
@@ -1018,6 +1023,11 @@ body {
   justify-content: center;
   width: 30px;
   height: 30px;
+  transition: transform .7s ease;
+}
+
+.accordion-active .guest-item-blogers__btn {
+  transform: rotate(180deg);
 }
 
 .guest-item-blogers__btn circle, .guest-item-blogers__btn path {
@@ -1453,7 +1463,7 @@ body {
 }
 
 .adv-section__background-main {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   width: 100%;
   height: 12px;
   background: url("../img/adv/Vector3.svg");
@@ -1535,7 +1545,7 @@ body {
 
 .about-section {
   background-color: #121723;
-  padding-top: 55px;
+  padding-top: 56px;
 }
 
 .about-block-left__heading {
@@ -1586,7 +1596,7 @@ body {
 
 .about-section__pucture {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .about-section__img {
@@ -1604,7 +1614,7 @@ body {
 }
 
 .about-section__heading-name-person {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -1749,6 +1759,7 @@ body {
 
 .swiper-block {
   position: relative;
+  margin-bottom: 29px;
 }
 
 .swiper {
@@ -2497,12 +2508,13 @@ body {
     /* broadcasts */
 
     .broadcast-left-top__heading {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .broadcast-left-top__span {
       font-size: 16px;
       line-height: 16px;
+      margin-bottom: 7px;
     }
 
     .broadcast-left-top__select {
@@ -2885,7 +2897,7 @@ body {
       display: block;
       position: relative;
       height: 112px;
-      margin-bottom: var(--margin-block);
+      margin-bottom: 31px;
     }
 
     .svg-spiral {
@@ -3004,7 +3016,7 @@ body {
     }
 
     .swiper-button-next, .swiper-rtl .swiper-button-prev {
-      right: -43px;
+      right: -50px;
     }
 
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
@@ -3012,7 +3024,7 @@ body {
     }
 
     .swiper-button-next, .swiper-button-prev {
-      top: 33%;
+      top: 106px;
     }
 
     /* about-section */
@@ -3333,7 +3345,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: var(--margin-block);
   }
 
   .podcast-list__item:not(:nth-child(2n)) {
@@ -3372,7 +3384,7 @@ body {
 
   .right-block-broadcast__list {
     position: relative;
-    top: 14px;
+    top: 13px;
   }
 
   .broadcast-left-top__select {
@@ -3415,6 +3427,7 @@ body {
 
   .broadcast-section {
     padding-bottom: 108px;
+    padding-top: 93px;
   }
 
   .right-block-broadcast__link-svg {
@@ -3444,6 +3457,7 @@ body {
 
   .guest-block-rigth__img-picture {
     height: auto;
+    margin-bottom: 14px;
   }
 
   .guests-section__text-info {
@@ -3452,10 +3466,6 @@ body {
 
   .guest-item-blogers__item:not(:last-child) {
     margin-bottom: 16px;
-  }
-
-  .guest-block-rigth__img-picture {
-    margin-bottom: 15px;
   }
 
   /* playlists-sectio */
@@ -3579,6 +3589,22 @@ body {
 
   .about-section__list {
     margin-bottom: 25px;
+  }
+
+  .swiper-block {
+    margin-bottom: 37px;
+  }
+
+  .form-label {
+    width: 100%;
+  }
+
+ .form-label:first-child {
+    margin-right: var(--margin-block);
+  }
+
+  .texteria-label.form-label:first-child {
+    margin-right: 0;
   }
 
   /* about-section */
@@ -3743,6 +3769,10 @@ body {
     margin-right: 8px;
   }
 
+  .broadcast-left-top__span {
+    margin-bottom: 9px;
+  }
+
   /* broacast */
 
 
@@ -3750,6 +3780,10 @@ body {
 
   .guest-block-rigth {
     max-width: 50%;
+  }
+
+  .guests-section__text-info {
+    margin-bottom: 49px;
   }
 
   /* guest-section */
@@ -3964,7 +3998,19 @@ body {
   }
 
   .about-section__info {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
+  }
+
+  .swiper-block {
+    margin-bottom: var(--margin-block);
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -75px;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -60px;
   }
 
   /* about-section */
@@ -4258,7 +4304,6 @@ body {
 .form-label {
   position: relative;
 }
-
 
 .span-invaled {
   position: absolute;
