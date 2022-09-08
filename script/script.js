@@ -12,38 +12,18 @@ function btnHeader() {
   const burgerBlock = body.querySelector(".block-burger-menu");
   const btnCloseBurger = body.querySelector(".container-top-burger__btn-close");
 
-
-  const btnEther = body.querySelector(".header-botton__ether-btn");
-  const blockEther = body.querySelector(".section-header-audio");
-
   const btnSearch = body.querySelector(".right-header__search-btn");
   const inputSearc = body.querySelector(".right-header__input-searc");
   const blockSearch = body.querySelector(".right-header__block-search");
 
   btnOpenBurger.addEventListener("click", () => {
-    burgerBlock.classList.add("activ-block");
+    burgerBlock.classList.add("activ-block-burger");
   })
 
   btnCloseBurger.addEventListener("click", () => {
-    burgerBlock.classList.remove("activ-block");
+    burgerBlock.classList.remove("activ-block-burger");
   })
 
-
-  btnEther.addEventListener("click", () => {
-    let status = 0;
-    for (let arr of blockEther.classList) {
-      if (arr !== "activ-flex") {
-        status = 0;
-      } else {
-        status = 1;
-      }
-    }
-    if (status === 1) {
-      blockEther.classList.remove("activ-flex");
-    } else {
-      blockEther.classList.add("activ-flex");
-    }
-  })
 
   btnSearch.addEventListener("click", () => {
     if (inputSearc.classList[2] === undefined) {
@@ -56,6 +36,18 @@ function btnHeader() {
       setTimeout(() => inputSearc.classList.remove("activ-block"), 500);
     }
   })
+
+  function clickBtnEther() {
+    let btn =  document.body.querySelector(".header-botton__ether-btn");
+    let headerBotton =  document.body.querySelector(".section-header-botton");
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("header-botton__ether-btn-active");
+      headerBotton.classList.toggle("section-header-botton-active");
+    })
+
+//#F5F6F7
+  }
+  clickBtnEther()
 }
 
 function openingAdditionalPodcasts() {
@@ -256,6 +248,8 @@ function swiper() {
     },
   });
 }
+
+
 
 output();
 
