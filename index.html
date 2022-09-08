@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/accordion.min.css" />
   <link rel="stylesheet" href="./css/choices.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- CSS -->
   <!-- SCRIPT -->
@@ -3342,18 +3343,9 @@
             <div class="about-block-right__svg svg-star"></div>
           </div>
         </div>
-        <div class="about-section__block-slider">
-          <button class="about-section__btn-left btn">
-            <svg class="about-section__svg-left" width="42" height="42" viewBox="0 0 42 42" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle r="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 21 21)" stroke="#A1A6B4"
-                stroke-width="2" />
-              <path d="M23 29L15 21L23 13" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-            </svg>
-          </button>
-          <ul class="reset-list about-section__list" data-simplebar>
-
-            <li class="about-section__item">
+        <!--<div class="about-section__block-slider swiper-container">
+          <ul class="reset-list about-section__list swiper-wrapper" data-simplebar>
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-1-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-1-1024px.jpg">
@@ -3364,7 +3356,7 @@
               <p class="reset-text about-section__text-person">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
             </li>
 
-            <li class="about-section__item">
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-2-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-2-1024px.jpg">
@@ -3376,7 +3368,7 @@
                 зачем?</p>
             </li>
 
-            <li class="about-section__item">
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-3-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-3-1024px.jpg">
@@ -3387,7 +3379,7 @@
               <p class="reset-text about-section__text-person">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
             </li>
 
-            <li class="about-section__item">
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-4-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-4-1024px.jpg">
@@ -3399,7 +3391,7 @@
               </p>
             </li>
 
-            <li class="about-section__item">
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-5-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-5-1024px.jpg">
@@ -3410,7 +3402,7 @@
               <p class="reset-text about-section__text-person">Привет! Я&nbsp;фотограф, музыкант, ведущий</p>
             </li>
 
-            <li class="about-section__item">
+            <li class="about-section__item swiper-slide">
               <picture class="about-section__pucture">
                 <source media="(min-width: 1440px)" srcset="./img/about/person-6-1440px.jpg">
                 <source media="(min-width: 1024px)" srcset="./img/about/person-6-1024px.jpg">
@@ -3421,14 +3413,135 @@
               <p class="reset-text about-section__text-person">Художник-оформитель. Оформляю</p>
             </li>
           </ul>
-          <button class="about-section__btn-right btn">
+          <button class="about-section__btn-left swiper-button-prev btn">
+            <svg class="about-section__svg-left" width="42" height="42" viewBox="0 0 42 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle r="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 21 21)" stroke="#A1A6B4"
+                stroke-width="2" />
+              <path d="M23 29L15 21L23 13" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+            </svg>
+          </button>
+          <button class="about-section__btn-right swiper-button-next btn">
             <svg class="about-section__svg-right" width="42" height="42" viewBox="0 0 42 42" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <circle cx="21" cy="21" r="20" transform="rotate(-90 21 21)" stroke="#A1A6B4" stroke-width="2" />
               <path d="M19 29L27 21L19 13" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
             </svg>
           </button>
+        </div>-->
+        <div class="swiper-block">
+          <div class="swiper">
+            <ul class="reset-list swiper-wrapper">
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-1-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-1-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-1-768px.jpg">
+                  <img src="./img/about/person-1.jpg" alt="Дмитрий Гутенберг" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Дмитрий Гутенберг</h3>
+                <p class="reset-text about-section__text-person">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+              </li>
+
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-2-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-2-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-2-768px.jpg">
+                  <img src="./img/about/person-2.jpg" alt="Анна Васильева" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Анна Васильева</h3>
+                <p class="reset-text about-section__text-person">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash;
+                  зачем?</p>
+              </li>
+
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-3-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-3-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-3-768px.jpg">
+                  <img src="./img/about/person-3.jpg" alt="Пётр Дмитревский" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Пётр Дмитриевский</h3>
+                <p class="reset-text about-section__text-person">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+              </li>
+
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-4-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-4-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-4-768px.jpg">
+                  <img src="./img/about/person-4.jpg" alt="Татьяна Флиганова" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Татьяна Флеганова</h3>
+                <p class="reset-text about-section__text-person">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                </p>
+              </li>
+
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-5-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-5-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-5-768px.jpg">
+                  <img src="./img/about/person-5.jpg" alt="Фёдор Прокопьев" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Фёдор Прокопьев</h3>
+                <p class="reset-text about-section__text-person">Привет! Я&nbsp;фотограф, музыкант, ведущий</p>
+              </li>
+
+              <li class=" swiper-slide">
+                <picture class="about-section__pucture">
+                  <source media="(min-width: 1440px)" srcset="./img/about/person-6-1440px.jpg">
+                  <source media="(min-width: 1024px)" srcset="./img/about/person-6-1024px.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/about/person-6-768px.jpg">
+                  <img src="./img/about/person-6.jpg" alt="Светлана Кортнева" class="about-section__img">
+                </picture>
+                <h3 class="heading about-section__heading-name-person">Светлана Кортнева</h3>
+                <p class="reset-text about-section__text-person">Художник-оформитель. Оформляю</p>
+              </li>
+            </ul>
+            <button class=" swiper-button-prev btn">
+              <svg class="about-section__svg-left" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle r="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 21 21)" stroke="#A1A6B4"
+                  stroke-width="2" />
+                <path d="M23 29L15 21L23 13" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </button>
+            <button class=" swiper-button-next btn">
+              <svg class="about-section__svg-right" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" transform="rotate(-90 21 21)" stroke="#A1A6B4" stroke-width="2" />
+                <path d="M19 29L27 21L19 13" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </button>
+          </div>
         </div>
+
+
+
+
+
+
+
+<!-- контейнер слайдера -->
+<!--<div class="swiper-container">
+  <!-- враппер -->
+  <!--<div class="swiper-wrapper">
+  <!-- слайды -->
+  <!--<div class="swiper-slide">Slide 1</div>-->
+  <!--<div class="swiper-slide">Slide 2</div>-->
+  <!--<div class="swiper-slide">Slide 3</div>-->
+  <!--</div>-->
+  <!-- кнопки пагинации -->
+  <!--<div class="swiper-pagination"></div>-->
+  <!-- кнопки для навигации -->
+  <!--<div class="swiper-button-prev"></div>-->
+  <!--<div class="swiper-button-next"></div>-->
+  <!--</div>-->
+
+
+
         <form novalidate method="POST" class="about-section__about-form-block about-form-block">
           <label for="texteria" class="form-label">
             <textarea id="texteria" required class="about-form-block__texteria" name="comment"
@@ -3607,6 +3720,7 @@
     });
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

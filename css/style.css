@@ -1747,6 +1747,22 @@ body {
   color: #FFFFFF;
 }
 
+.swiper-block {
+  position: relative;
+}
+
+.swiper {
+  position: initial;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
 /* Footer */
 
 .footer__top-container {
@@ -2987,6 +3003,18 @@ body {
       overflow: hidden;
     }
 
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+      right: -43px;
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+      left: -65px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      top: 33%;
+    }
+
     /* about-section */
 
     /* footer */
@@ -4179,9 +4207,6 @@ body {
 
   /* broadcast-section */
 
-
-
-
   /* podcast */
 
   .guests-section__text-info {
@@ -4208,8 +4233,6 @@ body {
 }
 
 /* media */
-
-
 
 /* JavaScript-class */
 

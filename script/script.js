@@ -3,6 +3,7 @@ function output() {
   openingAdditionalPodcasts();
   renderingGuestInformation();
   validateForm();
+  swiper();
 }
 
 function btnHeader() {
@@ -213,6 +214,43 @@ function validateForm() {
       input.classList.remove("invalide-input");
     }
   })
+}
+
+function swiper() {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    lazy: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      1440: {
+        slidesPerView: 4,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+
+      }
+    },
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 }
 
 output();
