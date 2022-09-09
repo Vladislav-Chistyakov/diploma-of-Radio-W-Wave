@@ -4,6 +4,7 @@ function output() {
   renderingGuestInformation();
   validateForm();
   swiper();
+  svg();
 }
 
 function btnHeader() {
@@ -247,6 +248,27 @@ function swiper() {
       el: '.swiper-scrollbar',
     },
   });
+}
+
+function svg() {
+  let play = document.querySelectorAll(".play-block");
+  let like = document.querySelectorAll(".like-block");
+  let shared = document.querySelectorAll(".shared-block");
+
+
+  function clickElement(elementArray) {
+    console.log(elementArray)
+
+    for (let i = 0; i < elementArray.length; i++) {
+      elementArray[i].addEventListener("click", () => {
+        elementArray[i].lastElementChild.textContent = Number(elementArray[i].lastElementChild.textContent) + 1;
+        elementArray[i].classList.add("click");
+      })
+    }
+  }
+
+  clickElement(like);
+
 }
 
 

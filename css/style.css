@@ -241,7 +241,7 @@ body {
 
 .block-burger-menu {
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   width: 100%;
   opacity: 0;
@@ -708,6 +708,7 @@ body {
   outline: 0px solid #fff;
   transition: background-color .3s ease, outline .3s ease;
 }
+
 
 .podcast-info-botton-span {
   padding-top: 4px;
