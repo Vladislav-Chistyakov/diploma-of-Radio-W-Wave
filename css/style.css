@@ -85,7 +85,6 @@ body {
 }
 
 .container {
-  min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 32px;
@@ -723,6 +722,17 @@ body {
   transition: fill .3s ease;
 }
 
+
+.podcast-info-block__actions-btn .podcast-info-block__actions-btn-svg.click-svg path {
+  fill: #4F28A5;
+  transition: fill .3s ease;
+}
+
+
+.podcast-info-block__actions-btn:focus .podcast-info-block__actions-btn-svg.click-svg path {
+  fill: #fff;
+}
+
 .podcast-info-block__actions-btn:focus {
   background-color: #AA9DFA;
   outline: 2px solid #AA9DFA;
@@ -1225,6 +1235,10 @@ body {
 
 .playlist-block-left__heading {
   margin-bottom: 20px;
+}
+
+.playlist-block-left__top-block {
+  overflow: hidden;
 }
 
 .playlist-block-left__top-block-one, .playlist-block-left__block-lists-input, .playlist-block-left__top-block-info {
@@ -2094,10 +2108,6 @@ body {
 
     .right-header__menu-btn {
       display: block;
-    }
-
-    .section-header-audio {
-      /*top: 186px;*/
     }
 
     .right-header__block-search-js {
@@ -4350,6 +4360,24 @@ body {
 .span-invaled-active {
   opacity: 1;
 }
+
+.click {
+  color: #4F28A5;
+}
+
+.header-play-start {
+  position: relative;
+}
+
+.pause-svg {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  overflow: initial;
+}
+
+
 
 /* JavaScript-class */
 
