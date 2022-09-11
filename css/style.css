@@ -4369,14 +4369,9 @@ body {
   position: relative;
 }
 
-.pause-svg {
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  overflow: initial;
+.pause-podcast {
+  padding: 3px;
 }
-
 
 
 /* JavaScript-class */

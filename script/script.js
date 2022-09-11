@@ -255,6 +255,8 @@ function svg() {
   let like = document.querySelectorAll(".like-block");
   let shared = document.querySelectorAll(".shared-block");
   let playHeader = document.querySelectorAll(".header-play-start");
+  let playPodcast = document.querySelectorAll(".podcast-info-block__top-button");
+
 
 
 
@@ -269,8 +271,11 @@ function svg() {
         let shared = "<path d=\"M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876ZM10 1.30522C10.3667 1.30522 10.6667 1.5989 10.6667 1.95783C10.6667 2.31677 10.3667 2.61044 10 2.61044C9.63333 2.61044 9.33333 2.31677 9.33333 1.95783C9.33333 1.5989 9.63333 1.30522 10 1.30522ZM2 7.17871C1.63333 7.17871 1.33333 6.88504 1.33333 6.5261C1.33333 6.16717 1.63333 5.87349 2 5.87349C2.36667 5.87349 2.66667 6.16717 2.66667 6.5261C2.66667 6.88504 2.36667 7.17871 2 7.17871ZM10 11.76C9.63333 11.76 9.33333 11.4664 9.33333 11.1074C9.33333 10.7485 9.63333 10.4548 10 10.4548C10.3667 10.4548 10.6667 10.7485 10.6667 11.1074C10.6667 11.4664 10.3667 11.76 10 11.76Z\"  fill=\"none\" />";
         let sharedClick = "<path d=\"M10 9.18876C9.49333 9.18876 9.04 9.38454 8.69333 9.69127L3.94 6.98293C3.97333 6.83283 4 6.68273 4 6.5261C4 6.36948 3.97333 6.21938 3.94 6.06928L8.64 3.38705C9 3.71335 9.47333 3.91566 10 3.91566C11.1067 3.91566 12 3.04116 12 1.95783C12 0.874498 11.1067 0 10 0C8.89333 0 8 0.874498 8 1.95783C8 2.11446 8.02667 2.26456 8.06 2.41466L3.36 5.09689C3 4.77058 2.52667 4.56827 2 4.56827C0.893333 4.56827 0 5.44277 0 6.5261C0 7.60944 0.893333 8.48394 2 8.48394C2.52667 8.48394 3 8.28163 3.36 7.95532L8.10667 10.6702C8.07333 10.8072 8.05333 10.9508 8.05333 11.0944C8.05333 12.1451 8.92667 13 10 13C11.0733 13 11.9467 12.1451 11.9467 11.0944C11.9467 10.0437 11.0733 9.18876 10 9.18876Z\" fill=\"#4F28A5\"/>";
 
-        let pauseHeader = "<g clip-path=\"url(#clip0_24531_3491)\"> <path d=\"M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z\" fill=\"#A1A6B4\"/> <rect x=\"9\" y=\"8\" width=\"2\" height=\"8\" rx=\"1\" fill=\"white\"/> <rect x=\"13\" y=\"8\" width=\"2\" height=\"8\" rx=\"1\" fill=\"white\"/> </g> <defs> <clipPath id=\"clip0_24531_3491\"> <rect width=\"24\" height=\"24\" fill=\"white\"/> </clipPath> </defs>";
+        let pauseHeader = "<g clip-path=\"url(#clip0_24531_3491)\"> <path d=\"M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z\" fill=\"#A1A6B4\"/> <rect x=\"7.5\" y=\"6.66667\" width=\"1.66667\" height=\"6.66667\" rx=\"0.833333\" fill=\"white\"/> <rect x=\"10.8333\" y=\"6.66667\" width=\"1.66667\" height=\"6.66667\" rx=\"0.833333\" fill=\"white\"/> </g> <defs> <clipPath id=\"clip0_24531_3491\"> <rect width=\"20\" height=\"20\" fill=\"white\"/> </clipPath> </defs>";
         let playHeader = "<path d=\"M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z\" fill=\"#A1A6B4\"/>";
+
+        let pausePodcast = "<svg width=\"42\" height=\"42\" viewBox=\"0 0 42 42\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_24531_3538)\"><circle cx=\"21\" cy=\"21\" r=\"20\" stroke=\"#A1A6B4\" stroke-width=\"2\"/><rect x=\"16\" y=\"12\" width=\"2\" height=\"18\" rx=\"1\" fill=\"#A1A6B4\"/><rect x=\"24\" y=\"12\" width=\"2\" height=\"18\" rx=\"1\" fill=\"#A1A6B4\"/></g><defs><clipPath id=\"clip0_24531_3538\"><rect width=\"42\" height=\"42\" fill=\"white\"/></clipPath></defs></svg>";
+        let playPodcast = "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"14.75\" stroke=\"none\" stroke-width=\"2\" /><path d=\"M16.2693 23.8474L23.6787 18.5997C24.1071 18.2999 24.1071 17.7001 23.6787 17.4003L16.2693 12.1526C15.7457 11.7778 15 12.1376 15 12.7523V23.2477C15 23.8624 15.7457 24.2222 16.2693 23.8474Z\" fill=\"none\" /> </svg>";
 
         if (elementArray[i].matches(".click")) {
 
@@ -314,6 +319,18 @@ function svg() {
           }
         }
 
+        if (elementArray[i].matches(".podcast-info-block__top-button")) {
+          if (elementArray[i].matches(".pause-podcast")) {
+            elementArray[i].classList.remove("pause-podcast");
+            elementArray[i].classList.remove("pause-svg");
+            elementArray[i].innerHTML = playPodcast;
+          } else {
+            elementArray[i].classList.add("pause-podcast");
+            elementArray[i].classList.add("pause-svg");
+            elementArray[i].innerHTML = pausePodcast;
+          }
+        }
+
       })
       elementArray[i]
     }
@@ -323,6 +340,7 @@ function svg() {
   clickElement(play);
   clickElement(shared);
   clickElement(playHeader);
+  clickElement(playPodcast);
 
 }
 
