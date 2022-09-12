@@ -6,6 +6,7 @@
 
 .accordion-panel {
   position: relative;
+  visibility: hidden;
   height: 0;
   left: -100%;
   opacity:0;
@@ -14,6 +15,7 @@
 }
 
 .accordion-active-panel {
+  visibility: visible;
   height: 100%;
   left: 0;
   opacity:1;
