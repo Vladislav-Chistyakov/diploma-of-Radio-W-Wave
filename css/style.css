@@ -498,16 +498,26 @@ body {
 
 .section-header-audio__block-one-btn:focus svg path,
 .section-header-audio__block-two-btn:focus svg path,
-.header-botton__btn-start:focus svg path,
-.header-audio-block__block:focus svg path  {
+.header-botton__btn-start:focus svg path {
   fill: #AA9DFA;
 }
 
 .section-header-audio__block-one-btn:active svg path,
 .section-header-audio__block-two-btn:active svg path
-.header-botton__btn-start:active svg path,
-.header-audio-block__block:active svg path  {
+.header-botton__btn-start:active svg path {
   fill: #6D31EE;
+}
+
+.header-audio-block__btn-start.header-play-start:focus svg path {
+  fill: #AA9DFA;
+}
+
+.header-audio-block__btn-start.header-play-start:hover svg path {
+  fill: #6D31EE;
+}
+
+.header-audio-block__btn-start.header-play-start:active svg path {
+  fill: #4F28A5;
 }
 
 .section-header-audio__block-one-span, .section-header-audio__block-two-span {
@@ -710,7 +720,7 @@ body {
   fill: #6D31EE;
 }
 
-/**/
+/* podcast-section */
 
 .pause-podcast {
   padding: 2.25px;
@@ -731,7 +741,6 @@ body {
   outline: 0px solid #fff;
   transition: background-color .3s ease, outline .3s ease;
 }
-
 
 .podcast-info-botton-span {
   padding-top: 4px;
@@ -813,6 +822,7 @@ body {
 .item-podcast-five, .item-podcast-six, .item-podcast-seven, .item-podcast-eight {
   display: none;
 }
+
 
 /* podcasts-section */
 
@@ -3395,6 +3405,55 @@ body {
     width: 162px;
   }
 
+  .right-header__link:hover, .header-botton__link:hover {
+    color: #6D31EE;
+    background-color: transparent;
+  }
+
+  .right-header__link:active, .header-botton__link:active {
+    color: #4F28A5;
+    background-color: transparent;
+  }
+
+  .right-header__search-btn:hover {
+    stroke: #AA9DFA;
+  }
+
+  .right-header__search-btn:active {
+    stroke: #4F28A5;
+  }
+
+  .header-login-button:hover {
+    background-color: #121723;
+    color: #fff;
+  }
+
+  .header-login-button:active {
+    background-color: #4F28A5;
+    color: #fff;
+    border: 2px solid #4F28A5;
+  }
+
+/*
+  .section-header-audio__block-one-btn:hover svg path,
+  .section-header-audio__block-two-btn:hover svg path
+  .header-audio-block__btn-start.header-play-start:hover svg path {
+    fill: #6D31EE;
+  }*/
+
+  /*.header-audio-block__btn-start.header-play-start:active svg path {
+    fill: #6D31EE;
+  }*/
+
+  /*.section-header-audio__block-one-btn:active svg path,
+  .section-header-audio__block-two-btn:active svg path
+  .header-audio-block__btn-start.header-play-start:active svg path {
+  }*/
+
+  /*.header-audio-block__btn-start.header-play-start:active svg path {
+    fill: #4F28A5;
+  }*/
+
   /* header */
 
   /* hero */
@@ -3472,6 +3531,16 @@ body {
 
     width: 175px;
     height: 175px;
+  }
+
+  .hero-section__btn:hover {
+    background-color: #AA9DFA;
+    border: 2px solid #AA9DFA;
+  }
+
+  .hero-section__btn:active {
+    background-color: #4F28A5;
+    border: 2px solid #4F28A5;
   }
 
   /* hero */
