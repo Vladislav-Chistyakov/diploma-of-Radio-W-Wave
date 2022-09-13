@@ -738,7 +738,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  outline: 0px solid #fff;
+  outline: 0px solid transparent;
   transition: background-color .3s ease, outline .3s ease;
 }
 
@@ -755,12 +755,10 @@ body {
   transition: fill .3s ease;
 }
 
-
 .podcast-info-block__actions-btn .podcast-info-block__actions-btn-svg.click-svg path {
   fill: #4F28A5;
   transition: fill .3s ease;
 }
-
 
 .podcast-info-block__actions-btn:focus .podcast-info-block__actions-btn-svg.click-svg path {
   fill: #fff;
@@ -785,6 +783,10 @@ body {
 .podcast-info-block__actions-btn:active path, .podcast-info-block__actions-btn:active .podcast-info-botton-span {
   fill: #6D31EE;;
   color: #6D31EE;
+}
+
+.podcast-info-block__actions-btn.click:active .click-svg path {
+  fill: #6D31EE;
 }
 
 .podcast-info-block__actions-btn:not(:last-child) {
@@ -906,22 +908,6 @@ body {
 .right-block-broadcast__item:nth-child(5) {
   margin-bottom: 0;
 }
-/*
-.right-block-broadcast__link::before {
-  content: "";
-  position: absolute;
-  top: -129.5px;
-  left: -13.5px;
-  right: -14.5px;
-  bottom: -14.5px;
-  outline: 1px solid #6D31EE;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-
- .right-block-broadcast__link:focus::before {
-  opacity: 1;
-}*/
 
 .right-block-broadcast__heading {
   margin-bottom: 5px;
@@ -962,6 +948,19 @@ body {
   transition: opacity .3s ease;
 }
 
+.right-block-broadcast__link::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+  z-index: 4;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: opacity .3s ease;
+}
+
 .right-block-broadcast__link path {
   fill: #121723;
   transition: fill .3s ease;
@@ -981,7 +980,11 @@ body {
   opacity: 0;
 }
 
-.right-block-broadcast__link:active, .right-block-broadcast__link:active path  {
+.right-block-broadcast__link:active::before {
+  opacity: 1;
+}
+
+.right-block-broadcast__link:active, .right-block-broadcast__link:active path {
   color: #6D31EE;
   fill: #6D31EE;
   background-color: transparent;
@@ -2297,7 +2300,7 @@ body {
       width: 255px;
     }
 
-    .right-block-broadcast__bacground {
+    .right-block-broadcast__bacground, .right-block-broadcast__link::before {
       height: 148px;
     }
 
@@ -3415,11 +3418,11 @@ body {
     background-color: transparent;
   }
 
-  .right-header__search-btn:hover {
+  .right-header__search-btn:hover path{
     stroke: #AA9DFA;
   }
 
-  .right-header__search-btn:active {
+  .right-header__search-btn:active path {
     stroke: #4F28A5;
   }
 
@@ -3433,26 +3436,6 @@ body {
     color: #fff;
     border: 2px solid #4F28A5;
   }
-
-/*
-  .section-header-audio__block-one-btn:hover svg path,
-  .section-header-audio__block-two-btn:hover svg path
-  .header-audio-block__btn-start.header-play-start:hover svg path {
-    fill: #6D31EE;
-  }*/
-
-  /*.header-audio-block__btn-start.header-play-start:active svg path {
-    fill: #6D31EE;
-  }*/
-
-  /*.section-header-audio__block-one-btn:active svg path,
-  .section-header-audio__block-two-btn:active svg path
-  .header-audio-block__btn-start.header-play-start:active svg path {
-  }*/
-
-  /*.header-audio-block__btn-start.header-play-start:active svg path {
-    fill: #4F28A5;
-  }*/
 
   /* header */
 
@@ -3562,6 +3545,65 @@ body {
     width: calc((100% - var(--margin-block)) / 2);
   }
 
+  .podcast-info-block__top-button:hover circle {
+    stroke: #6D31EE;
+  }
+
+  .podcast-info-block__top-button:hover path {
+    fill: #6D31EE;
+  }
+
+  .pause-svg:hover rect {
+    fill: #6D31EE;
+  }
+
+  .podcast-info-block__top-button:active circle {
+    stroke: #4F28A5;
+    fill: #4F28A5;
+  }
+
+  .podcast-info-block__top-button:active path {
+    fill: #fff;
+  }
+
+  .pause-svg:active rect {
+    fill: #fff;
+  }
+
+  .podcast-info-block__actions-btn:hover path, .podcast-info-block__actions-btn:hover .podcast-info-botton-span {
+    fill: #6D31EE;;
+    color: #6D31EE;
+  }
+
+  .podcast-info-block__actions-btn.click:hover .click-svg path {
+    fill: #6D31EE;
+  }
+
+  .podcast-info-block__actions-btn:hover {
+    background-color: transparent;
+    outline: none;
+  }
+
+  .podcast-info-block__actions-btn:active path, .podcast-info-block__actions-btn:active .podcast-info-botton-span {
+    fill: #4F28A5;;
+    color: #4F28A5;
+  }
+
+  .podcast-info-block__actions-btn.click:active .click-svg path {
+    fill: #4F28A5;
+  }
+
+  .podcasts-section__btn:hover {
+    background-color: #6D31EE;
+    color: #fff;
+  }
+
+  .podcasts-section__btn:active {
+    background-color: #4F28A5;
+    color: #fff;
+    border: 2px solid #4F28A5;
+  }
+
   /* podcasts-section */
 
   /* broadcast-section */
@@ -3615,6 +3657,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+    transition: color .3s ease, border .3s ease, background-color .3s ease;
   }
 
   .broadcast-left-botton__svg {
@@ -3622,6 +3665,11 @@ body {
   }
 
   .broadcast-left-botton__btn path {
+    stroke: #121723;
+    transition: stroke .3s ease;
+  }
+
+  .broadcast-left-botton__svg path{
     stroke: #121723;
   }
 
@@ -3641,6 +3689,41 @@ body {
     padding: 0;
     width: 20px;
     left: 2px;
+  }
+
+  .broadcast-left-botton__btn:focus, .broadcast-left-botton__btn:focus path {
+    stroke: #121723;
+    color: #121723;
+    background-color: #AA9DFA;
+  }
+
+  .broadcast-left-botton__btn:hover, .broadcast-left-botton__btn:hover path {
+    stroke: #fff;
+    color: #fff;
+    background-color: #121723;
+  }
+
+  .broadcast-left-botton__btn:active, .broadcast-left-botton__btn:active path {
+    stroke: #fff;
+    color: #fff;
+    background-color: #4F28A5;
+    border: 2px solid #4F28A5;
+  }
+
+  .right-block-broadcast__link:hover, .right-block-broadcast__link:hover path {
+    color: #6D31EE;
+    fill: #6D31EE;
+    background-color: transparent;
+  }
+
+  .right-block-broadcast__link:active, .right-block-broadcast__link:active path {
+    color: #4F28A5;
+    fill: #4F28A5;
+    background-color: transparent;
+  }
+
+  .right-block-broadcast__link:hover::before {
+    opacity: 1;
   }
 
   /* broadcast-section */
