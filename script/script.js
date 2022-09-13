@@ -147,7 +147,7 @@ function validateForm() {
   })
 
   inputName.addEventListener("input", () => {
-    inputName.value = inputName.value.replace(/[^а-я]/g, '');
+    inputName.value = inputName.value.replace(/[^А-Я, а-я]/g, '');
     valueInputName = inputName.value;
   })
 
