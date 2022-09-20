@@ -825,6 +825,10 @@ body {
   display: none;
 }
 
+.podcasts-js {
+  display: block;
+}
+
 /* podcasts-section */
 
 /* broadcast-section */
@@ -2150,7 +2154,6 @@ body {
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   color: #121723;
-  /*background-color: #F5F6F7;*/
   border-top: 1px solid #D2D5DD;
   background-color: #AA9DFA;
 }
@@ -4107,8 +4110,6 @@ body {
   }
 
   /* footer */
-
-
 }
 
 @media(min-width: 1440px) {

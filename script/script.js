@@ -57,9 +57,11 @@ function openingAdditionalPodcasts() {
     let podcasts = document.body.querySelectorAll(".podcast-list__item");
     for (let i = 0; i < podcasts.length; i++) {
       if (window.innerWidth < 576) {
-        podcasts[i].style.display = "block";
+        console.log(podcasts[i]);
+        podcasts[i].classList.toggle("podcasts-js");
       } else {
-        podcasts[i].style.display = "flex";
+        console.log(podcasts[i]);
+        podcasts[i].classList.toggle("podcasts-js");
       }
     }
   })
