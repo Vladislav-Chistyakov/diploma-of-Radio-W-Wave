@@ -4365,6 +4365,22 @@ body {
     padding-bottom: 109px;
   }
 
+  .playlist-block-right__background-btn::after {
+    width: 160px;
+    height: 160px;
+    top: -56px;
+    left: -56px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .playlist-block-right__background-btn {
+    width: 48px;
+    height: 48px;
+    top: 56px;
+    left: 56px;
+  }
+
   /* playlist */
 
   /* broadcast */
