@@ -84,7 +84,26 @@ function renderingGuestInformation() {
   }
 
   for (let i = 0; i < btnPerson.length; i++) {
+
+    let val = 0;
+
+    if (val === 0) {
+      header.textContent = infoGuests.name[0];
+      comment.textContent = infoGuests.comment[0];
+      for (let i = 0; i < 3; i++) {
+        if (i === 0) {
+          imgGuestDecstop.srcset = infoGuests.image[0][i];
+        } else if (i === 1) {
+          imgGuestMedium.srcset = infoGuests.image[0][i];
+        } else {
+          imgGustMobile.srcset = infoGuests.image[0][i];
+        }
+      }
+    }
+
     btnPerson[i].addEventListener("click", () => {
+      val = 1;
+
       let imgNumber = searchHuestInformation(btnPerson[i].textContent, infoGuests)[2];
 
       header.textContent = searchHuestInformation(btnPerson[i].textContent, infoGuests)[0];
