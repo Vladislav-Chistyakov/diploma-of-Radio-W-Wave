@@ -45,25 +45,21 @@ function btnHeader() {
       btn.classList.toggle("header-botton__ether-btn-active");
       headerBotton.classList.toggle("section-header-botton-active");
     })
-
-//#F5F6F7
   }
   clickBtnEther()
 }
 
 function openingAdditionalPodcasts() {
   const btnPodcasts = document.body.querySelector(".podcasts-section__btn");
+  let podcasts = document.body.querySelectorAll(".podcast-list__item");
   btnPodcasts.addEventListener("click", () => {
-    let podcasts = document.body.querySelectorAll(".podcast-list__item");
-    for (let i = 0; i < podcasts.length; i++) {
-      if (window.innerWidth < 576) {
-        console.log(podcasts[i]);
-        podcasts[i].classList.toggle("podcasts-js");
-      } else {
-        console.log(podcasts[i]);
-        podcasts[i].classList.toggle("podcasts-js");
+      for (let i = 0; i < podcasts.length; i++) {
+        if (window.innerWidth < 576) {
+          podcasts[i].classList.toggle('podcast-list__item-status');
+        } else {
+          podcasts[i].classList.toggle('podcast-list__item-status');
+        }
       }
-    }
   })
 }
 
@@ -183,6 +179,7 @@ function validateForm() {
       let err = 0;
       if (valueTexteria.length < 5) {
         invaledInput(texteria, texteria.nextElementSibling);
+        texteria.nextElementSibling.textContent = 'Слишком короткий комментарий!'
         err = 1;
       } else {
         valedInput(texteria, texteria.nextElementSibling);
@@ -190,19 +187,24 @@ function validateForm() {
 
       if (valueInputName.length < 2) {
         invaledInput(inputName, inputName.nextElementSibling);
+        inputName.nextElementSibling.textContent = 'Имя не может состоять меньше чем из 2 букв!'
         err = 1;
       } else {
         valedInput(inputName, inputName.nextElementSibling)
-
       }
 
       if (valueInputEmail.length < 8) {
         invaledInput(inputEmail, inputEmail.nextElementSibling);
+        inputEmail.nextElementSibling.textContent = 'количество знаков меньше 8!'
         err = 1;
       } else {
         if (valueInputEmail.indexOf("@") < 0) {
           invaledInput(inputEmail, inputEmail.nextElementSibling);
+          inputEmail.nextElementSibling.textContent = 'Отсутствует знак "@"!'
           err = 1;
+        } else if (valueInputEmail.indexOf(".") < 0){
+          invaledInput(inputEmail, inputEmail.nextElementSibling);
+          inputEmail.nextElementSibling.textContent = 'Отсутствует знак "."'
         } else {
           valedInput(inputEmail, inputEmail.nextElementSibling);
         }
@@ -212,7 +214,7 @@ function validateForm() {
 
     checkingNumberCharacters();
 
-    if (checkingNumberCharacters()) {
+    if (!checkingNumberCharacters()) {
       event.preventDefault();
     }
 
